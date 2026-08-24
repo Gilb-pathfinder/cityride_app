@@ -1,0 +1,346 @@
+{
+  "meta": { "siteName": "CityRide" },
+  "common": {
+    "loading": "Chargement...",
+    "retry": "Réessayer",
+    "viewAll": "Voir tout",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "filterAll": "Tous",
+    "status": "Statut",
+    "actions": "Actions",
+    "save": "Enregistrer",
+    "saveChanges": "Enregistrer les modifications",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "noResults": "Aucun résultat trouvé.",
+    "somethingWrong": "Une erreur s'est produite. Veuillez réessayer.",
+    "unauthorized": "Vous n'êtes pas autorisé à accéder à cette page.",
+    "back": "Retour",
+    "backToSite": "Retour au site",
+    "download": "Télécharger",
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "details": "Détails",
+    "notes": "Notes",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "changesSaved": "Modifications enregistrées avec succès.",
+    "unableToLoad": "Impossible de charger les données. Veuillez réessayer.",
+    "comingSoon": "Bientôt disponible",
+    "select": "Sélectionner"
+  },
+  "nav": {
+    "home": "Accueil",
+    "howItWorks": "Comment fonctionne CityRide",
+    "forClients": "Pour les clients",
+    "forRiders": "Pour les conducteurs",
+    "trust": "Confiance et vérification",
+    "faq": "FAQ",
+    "download": "Télécharger l'application",
+    "contact": "Contact",
+    "adminLogin": "Connexion administrateur"
+  },
+  "footer": {
+    "tagline": "Trouvez un conducteur à proximité. Connectez-vous en toute confiance.",
+    "company": "Entreprise",
+    "product": "Produit",
+    "resources": "Ressources",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "rights": "Tous droits réservés.",
+    "contactUs": "Nous contacter",
+    "adminPanel": "Panneau d'administration"
+  },
+  "home": {
+    "heroEyebrow": "Découverte de conducteurs à proximité",
+    "heroTitle": "Trouvez un conducteur à proximité. Connectez-vous en toute confiance.",
+    "heroSubtitle": "CityRide aide les clients à découvrir des conducteurs vérifiés à proximité et à les contacter via une expérience mobile simple basée sur la localisation.",
+    "ctaDownload": "Télécharger l'application CityRide",
+    "ctaHowItWorks": "Voir comment ça marche",
+    "sectionWhatTitle": "Qu'est-ce que CityRide ?",
+    "sectionWhatBody": "CityRide est une plateforme mobile qui met en relation les clients avec des conducteurs de moto à proximité. Ouvrez l'application, et CityRide vous montre les conducteurs disponibles autour de vous afin que vous puissiez les contacter directement.",
+    "sectionDiscoveryTitle": "Découverte des conducteurs à proximité",
+    "sectionDiscoveryBody": "Grâce à votre localisation, l'application affiche les conducteurs vérifiés proches de vous, avec leur distance et leurs informations de profil, afin que vous puissiez choisir qui contacter.",
+    "forClientsTitle": "Pour les clients",
+    "forClientsBody": "Découvrez les conducteurs à proximité, consultez leur profil et leur distance, et contactez-les directement depuis l'application.",
+    "forRidersTitle": "Pour les conducteurs",
+    "forRidersBody": "Rejoignez CityRide, complétez la vérification, passez en ligne et commencez à recevoir des contacts de clients à proximité.",
+    "downloadTitle": "Obtenez l'application CityRide",
+    "downloadBody": "CityRide est une expérience conçue avant tout pour mobile. Téléchargez l'application pour découvrir des conducteurs à proximité ou pour devenir un conducteur vérifié.",
+    "statsRiders": "Conducteurs sur la plateforme",
+    "statsClients": "Clients utilisant CityRide",
+    "statsCities": "Zones desservies"
+  },
+  "howItWorks": {
+    "title": "Comment fonctionne CityRide",
+    "subtitle": "Un parcours simple et transparent, de la découverte à la fin du trajet.",
+    "clientFlowTitle": "Parcours du client",
+    "clientFlowSteps": [
+      "Le client ouvre l'application mobile CityRide",
+      "La localisation est utilisée pour déterminer la position du client",
+      "Les conducteurs à proximité sont découverts",
+      "Le client consulte les informations du conducteur",
+      "Le client appuie sur Appeler",
+      "Un Contact Event est créé"
+    ],
+    "contactEventTitle": "Contact Event et Trip Request",
+    "contactEventBody": "Appeler un conducteur crée un Contact Event. Cela enregistre la tentative de contact du client — cela ne représente pas automatiquement un trajet terminé.",
+    "tripLifecycleTitle": "Cycle de vie du Trip Request",
+    "tripLifecycleSteps": [
+      "Contact Event",
+      "Trip Request",
+      "Demandé",
+      "Accepté / Refusé",
+      "En cours",
+      "Terminé / Annulé"
+    ],
+    "note": "Cette distinction est essentielle au fonctionnement de CityRide : un Contact Event enregistre une intention de contact, tandis qu'un Trip Request suit son propre cycle de vie, de la demande jusqu'à l'achèvement."
+  },
+  "forClients": {
+    "title": "Pour les clients",
+    "subtitle": "Tout ce que les clients peuvent faire avec l'application mobile CityRide.",
+    "capabilities": [
+      "Utiliser la découverte de conducteurs basée sur la localisation",
+      "Voir les conducteurs à proximité",
+      "Consulter les informations du conducteur",
+      "Voir la distance jusqu'à chaque conducteur",
+      "Voir la note du conducteur lorsqu'elle est disponible",
+      "Contacter un conducteur directement",
+      "Participer au cycle de vie du Trip Request",
+      "Consulter les informations pertinentes de trajet et de paiement dans l'application"
+    ],
+    "note": "Le site CityRide ne décrit que les fonctionnalités réellement présentes dans le système actuel."
+  },
+  "forRiders": {
+    "title": "Pour les conducteurs",
+    "subtitle": "Comment rejoindre CityRide et opérer en tant que conducteur vérifié.",
+    "steps": [
+      "Créer un compte conducteur",
+      "Compléter l'intégration du conducteur",
+      "Soumettre les documents d'identité et de permis requis",
+      "Fournir les informations du véhicule",
+      "Attendre la vérification",
+      "Définir la disponibilité en ligne / hors ligne",
+      "Partager la position actuelle lorsqu'il est en ligne",
+      "Recevoir des notifications pour les tentatives de contact",
+      "Participer au cycle de vie du Trip Request"
+    ],
+    "verificationNote": "La vérification des conducteurs est gérée par le système CityRide et examinée par les administrateurs dans le panneau d'administration.",
+    "cta": "Commencer l'intégration dans l'application CityRide"
+  },
+  "trust": {
+    "title": "Confiance et vérification",
+    "subtitle": "Comment CityRide établit la confiance entre clients et conducteurs.",
+    "infoTitle": "Ce que comprennent les informations du conducteur",
+    "infoItems": [
+      "Informations de profil",
+      "Type de véhicule",
+      "Numéro de plaque",
+      "Documentation du permis",
+      "Documentation d'identité",
+      "Statut de vérification"
+    ],
+    "processTitle": "Processus de vérification",
+    "processBody": "Les conducteurs soumettent leurs documents lors de l'intégration. Les administrateurs examinent ces informations dans le panneau d'administration et mettent à jour le statut de vérification du conducteur.",
+    "disclaimerTitle": "Important",
+    "disclaimer": "CityRide communique la confiance à travers le processus de vérification décrit ci-dessus. Nous ne prétendons pas garantir une sécurité absolue, une certification gouvernementale, des vérifications d'antécédents automatiques ou une couverture d'assurance, sauf confirmation officielle et mise en œuvre effective."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Réponses basées sur le fonctionnement réel du système CityRide.",
+    "clientsTitle": "Clients",
+    "ridersTitle": "Conducteurs",
+    "clientItems": [
+      { "q": "Qu'est-ce que CityRide ?", "a": "CityRide est une plateforme mobile qui aide les clients à découvrir des conducteurs à proximité et à les contacter directement." },
+      { "q": "Comment trouver des conducteurs à proximité ?", "a": "Ouvrez l'application CityRide et autorisez l'accès à la localisation. Les conducteurs disponibles à proximité s'afficheront automatiquement." },
+      { "q": "Que se passe-t-il lorsque j'appuie sur Appeler ?", "a": "Appuyer sur Appeler crée un Contact Event, qui enregistre votre tentative de contacter ce conducteur." },
+      { "q": "Un Contact Event est-il identique à un trajet ?", "a": "Non. Un Contact Event n'enregistre qu'une intention de contact. Un trajet suit le cycle de vie distinct du Trip Request." },
+      { "q": "Que se passe-t-il après la création d'un Trip Request ?", "a": "Le Trip Request passe par les étapes Demandé, Accepté ou Refusé, En cours, puis Terminé ou Annulé." },
+      { "q": "Que se passe-t-il si aucun conducteur n'est disponible à proximité ?", "a": "L'application vous informera qu'aucun conducteur n'a été trouvé à proximité afin que vous puissiez réessayer sous peu." }
+    ],
+    "riderItems": [
+      { "q": "Comment devenir conducteur CityRide ?", "a": "Créez un compte conducteur dans l'application et complétez le processus d'intégration." },
+      { "q": "Quelles informations sont requises lors de l'intégration ?", "a": "Vous devrez fournir une pièce d'identité, un permis de conduire et les informations de votre véhicule." },
+      { "q": "Comment fonctionne la vérification des conducteurs ?", "a": "Les administrateurs examinent vos documents soumis dans le panneau d'administration et mettent à jour votre statut de vérification." },
+      { "q": "Comment passer en ligne ou hors ligne ?", "a": "Utilisez le bouton de disponibilité dans l'application pour vous mettre en ligne ou hors ligne à tout moment." },
+      { "q": "Comment ma position est-elle mise à jour ?", "a": "Lorsque vous êtes en ligne, l'application partage votre position actuelle afin que les clients à proximité puissent vous découvrir." }
+    ]
+  },
+  "download": {
+    "title": "Télécharger l'application CityRide",
+    "subtitle": "Obtenez l'application pour découvrir des conducteurs à proximité ou rejoindre en tant que conducteur vérifié.",
+    "body": "CityRide est disponible sur mobile. Utilisez les liens ci-dessous pour télécharger l'application une fois publiée sur les stores.",
+    "googlePlay": "Disponible sur Google Play",
+    "appStore": "Télécharger sur l'App Store",
+    "qrTitle": "Scanner pour télécharger",
+    "qrBody": "Scannez ce code QR avec l'appareil photo de votre téléphone pour ouvrir la page de téléchargement.",
+    "screensTitle": "Aperçu de l'application"
+  },
+  "contact": {
+    "title": "Contact et assistance",
+    "subtitle": "Une question sur CityRide ? Contactez notre équipe.",
+    "formName": "Nom complet",
+    "formEmail": "Adresse e-mail",
+    "formMessage": "Message",
+    "formSubmit": "Envoyer le message",
+    "formSuccess": "Merci. Votre message a bien été reçu.",
+    "supportEmail": "E-mail du support",
+    "supportPhone": "Téléphone du support",
+    "office": "Bureau"
+  },
+  "auth": {
+    "loginTitle": "Connexion administrateur",
+    "loginSubtitle": "Connectez-vous pour accéder au panneau d'administration CityRide.",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "loginButton": "Se connecter",
+    "signingIn": "Connexion en cours...",
+    "invalidCredentials": "E-mail ou mot de passe invalide.",
+    "demoHint": "Identifiants de démonstration : admin@cityride.rw / admin123",
+    "logout": "Déconnexion"
+  },
+  "admin": {
+    "sidebar": {
+      "dashboard": "Tableau de bord",
+      "users": "Utilisateurs",
+      "riders": "Conducteurs",
+      "riderVerification": "Vérification des conducteurs",
+      "contactEvents": "Contact Events",
+      "tripRequests": "Trip Requests",
+      "notificationLogs": "Journaux de notifications",
+      "payments": "Paiements",
+      "transactions": "Transactions",
+      "roles": "Rôles",
+      "appConfig": "Configuration de l'application"
+    },
+    "dashboard": {
+      "title": "Tableau de bord",
+      "subtitle": "Aperçu du système CityRide.",
+      "totalUsers": "Utilisateurs au total",
+      "totalClients": "Clients au total",
+      "totalRiders": "Conducteurs au total",
+      "pendingVerification": "En attente de vérification",
+      "ridersOnline": "Conducteurs en ligne actuellement",
+      "contactEventsToday": "Contact Events aujourd'hui",
+      "tripRequestsToday": "Trip Requests aujourd'hui",
+      "tripsInProgress": "Trajets en cours",
+      "completedToday": "Terminés aujourd'hui",
+      "paymentsToday": "Paiements aujourd'hui"
+    },
+    "users": {
+      "title": "Utilisateurs",
+      "subtitle": "Tous les comptes clients et conducteurs enregistrés sur CityRide.",
+      "searchPlaceholder": "Rechercher par nom ou e-mail"
+    },
+    "riders": {
+      "title": "Conducteurs",
+      "subtitle": "Tous les conducteurs enregistrés sur la plateforme.",
+      "verificationTitle": "Vérification des conducteurs",
+      "verificationSubtitle": "Examinez les conducteurs en attente et mettez à jour leur statut de vérification.",
+      "approve": "Vérifier",
+      "reject": "Refuser",
+      "reviewNotesPlaceholder": "Ajouter des notes de vérification (facultatif)",
+      "viewDocuments": "Voir les documents"
+    },
+    "contactEvents": {
+      "title": "Contact Events",
+      "subtitle": "Enregistrements des tentatives de contact des clients avec les conducteurs. Distincts des Trip Requests."
+    },
+    "tripRequests": {
+      "title": "Trip Requests",
+      "subtitle": "Le cycle de vie complet du trajet, de la demande à l'achèvement."
+    },
+    "notificationLogs": {
+      "title": "Journaux de notifications",
+      "subtitle": "Enregistrements de livraison des notifications de contact des conducteurs."
+    },
+    "payments": {
+      "title": "Paiements",
+      "subtitle": "Enregistrements de paiement liés aux Trip Requests."
+    },
+    "transactions": {
+      "title": "Transactions",
+      "subtitle": "Enregistrements des transactions au niveau du fournisseur, distincts des paiements."
+    },
+    "roles": {
+      "title": "Rôles",
+      "subtitle": "Gérer les rôles administratifs et les permissions.",
+      "addRole": "Ajouter un rôle",
+      "roleName": "Nom du rôle",
+      "permissions": "Permissions"
+    },
+    "config": {
+      "title": "Configuration de l'application",
+      "subtitle": "Configuration globale pour l'application mobile CityRide.",
+      "launchAreaCenter": "Centre de la zone de lancement",
+      "launchAreaRadius": "Rayon de la zone de lancement (km)",
+      "defaultSearchRadius": "Rayon de recherche par défaut (km)",
+      "maxSearchRadius": "Rayon de recherche maximal (km)",
+      "locationUpdateInterval": "Intervalle de mise à jour de la position (sec)",
+      "minAppVersion": "Version minimale de l'application",
+      "maintenanceMode": "Mode maintenance"
+    }
+  },
+  "fields": {
+    "fullName": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "role": "Rôle",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "lastSeen": "Dernière connexion",
+    "vehicleType": "Type de véhicule",
+    "plateNumber": "Numéro de plaque",
+    "licenseDocument": "Document de permis",
+    "idDocument": "Pièce d'identité",
+    "verificationStatus": "Statut de vérification",
+    "verificationNotes": "Notes de vérification",
+    "online": "En ligne",
+    "offline": "Hors ligne",
+    "rating": "Note",
+    "client": "Client",
+    "rider": "Conducteur",
+    "clientLocation": "Position du client",
+    "riderLocation": "Position du conducteur",
+    "distance": "Distance",
+    "contactMethod": "Méthode de contact",
+    "tripRequest": "Trip Request",
+    "origin": "Origine",
+    "destination": "Destination",
+    "contactEvent": "Contact Event",
+    "messageId": "ID du message",
+    "notificationStatus": "Statut de la notification",
+    "errorInfo": "Informations sur l'erreur",
+    "sentTime": "Heure d'envoi",
+    "amount": "Montant",
+    "currency": "Devise",
+    "paymentMethod": "Méthode de paiement",
+    "paymentStatus": "Statut du paiement",
+    "payment": "Paiement",
+    "provider": "Fournisseur",
+    "providerReference": "Référence du fournisseur",
+    "rawResponse": "Réponse brute",
+    "permissions": "Permissions",
+    "id": "ID"
+  },
+  "status": {
+    "pending": "En attente",
+    "verified": "Vérifié",
+    "rejected": "Refusé",
+    "requested": "Demandé",
+    "accepted": "Accepté",
+    "in_progress": "En cours",
+    "completed": "Terminé",
+    "cancelled": "Annulé",
+    "initiated": "Initié",
+    "connected": "Connecté",
+    "missed": "Manqué",
+    "failed": "Échoué",
+    "sent": "Envoyé",
+    "delivered": "Livré",
+    "success": "Réussi",
+    "refunded": "Remboursé"
+  }
+}

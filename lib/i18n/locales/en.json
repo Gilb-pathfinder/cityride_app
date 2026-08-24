@@ -1,0 +1,346 @@
+{
+  "meta": { "siteName": "CityRide" },
+  "common": {
+    "loading": "Loading...",
+    "retry": "Try again",
+    "viewAll": "View all",
+    "search": "Search",
+    "filter": "Filter",
+    "filterAll": "All",
+    "status": "Status",
+    "actions": "Actions",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "cancel": "Cancel",
+    "close": "Close",
+    "noResults": "No results found.",
+    "somethingWrong": "Something went wrong. Please try again.",
+    "unauthorized": "You are not authorized to access this page.",
+    "back": "Back",
+    "backToSite": "Back to website",
+    "download": "Download",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "details": "Details",
+    "notes": "Notes",
+    "createdAt": "Created",
+    "updatedAt": "Updated",
+    "changesSaved": "Changes saved successfully.",
+    "unableToLoad": "Unable to load data. Please try again.",
+    "comingSoon": "Coming soon",
+    "select": "Select"
+  },
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How CityRide Works",
+    "forClients": "For Clients",
+    "forRiders": "For Riders",
+    "trust": "Trust & Verification",
+    "faq": "FAQ",
+    "download": "Download the App",
+    "contact": "Contact",
+    "adminLogin": "Admin Login"
+  },
+  "footer": {
+    "tagline": "Find a nearby ride. Connect with confidence.",
+    "company": "Company",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "contactUs": "Contact us",
+    "adminPanel": "Admin Panel"
+  },
+  "home": {
+    "heroEyebrow": "Location-based rider discovery",
+    "heroTitle": "Find a nearby ride. Connect with confidence.",
+    "heroSubtitle": "CityRide helps clients discover nearby verified riders and connect with them through a simple, location-based mobile experience.",
+    "ctaDownload": "Download the CityRide App",
+    "ctaHowItWorks": "See how it works",
+    "sectionWhatTitle": "What is CityRide?",
+    "sectionWhatBody": "CityRide is a mobile platform that connects clients with nearby motorcycle riders. Open the app, and CityRide shows you available riders around your location so you can reach out directly.",
+    "sectionDiscoveryTitle": "Nearby rider discovery",
+    "sectionDiscoveryBody": "Using your location, the app surfaces verified riders near you, along with their distance and profile information, so you can choose who to contact.",
+    "forClientsTitle": "For Clients",
+    "forClientsBody": "Discover nearby riders, view their profile and distance, and contact them directly from the app.",
+    "forRidersTitle": "For Riders",
+    "forRidersBody": "Join CityRide, complete verification, go online, and start receiving contact from nearby clients.",
+    "downloadTitle": "Get the CityRide app",
+    "downloadBody": "CityRide is a mobile-first experience. Download the app to discover nearby riders or to join as a verified rider.",
+    "statsRiders": "Riders on the platform",
+    "statsClients": "Clients using CityRide",
+    "statsCities": "Areas served"
+  },
+  "howItWorks": {
+    "title": "How CityRide Works",
+    "subtitle": "A simple, transparent flow from discovery to trip completion.",
+    "clientFlowTitle": "Client flow",
+    "clientFlowSteps": [
+      "Client opens the CityRide mobile app",
+      "Location is used to find the client's position",
+      "Nearby riders are discovered",
+      "Client views rider information",
+      "Client taps Call",
+      "A Contact Event is created"
+    ],
+    "contactEventTitle": "Contact Event vs. Trip Request",
+    "contactEventBody": "Calling a rider creates a Contact Event. It records the client's attempt to reach a rider — it does not automatically represent a completed trip.",
+    "tripLifecycleTitle": "Trip Request lifecycle",
+    "tripLifecycleSteps": [
+      "Contact Event",
+      "Trip Request",
+      "Requested",
+      "Accepted / Rejected",
+      "In Progress",
+      "Completed / Cancelled"
+    ],
+    "note": "This distinction is core to how CityRide works: a Contact Event is a record of contact intent, while a Trip Request follows its own lifecycle from request to completion."
+  },
+  "forClients": {
+    "title": "For Clients",
+    "subtitle": "Everything clients can do with the CityRide mobile app.",
+    "capabilities": [
+      "Use location-based rider discovery",
+      "View nearby riders",
+      "View rider information",
+      "View distance to each rider",
+      "View rider rating where available",
+      "Contact a rider directly",
+      "Participate in the Trip Request lifecycle",
+      "View relevant trip and payment information in the app"
+    ],
+    "note": "The CityRide website only describes functionality that exists in the current system."
+  },
+  "forRiders": {
+    "title": "For Riders",
+    "subtitle": "How to join CityRide and operate as a verified rider.",
+    "steps": [
+      "Create a rider account",
+      "Complete rider onboarding",
+      "Submit required identity and license documents",
+      "Provide vehicle information",
+      "Await verification",
+      "Set online / offline availability",
+      "Share current location while online",
+      "Receive notifications for contact attempts",
+      "Participate in the Trip Request lifecycle"
+    ],
+    "verificationNote": "Rider verification is managed through the CityRide system and reviewed by administrators in the Admin Panel.",
+    "cta": "Start onboarding in the CityRide app"
+  },
+  "trust": {
+    "title": "Trust & Verification",
+    "subtitle": "How CityRide establishes trust between clients and riders.",
+    "infoTitle": "What rider information includes",
+    "infoItems": [
+      "Profile information",
+      "Vehicle type",
+      "Plate number",
+      "License documentation",
+      "Identity documentation",
+      "Verification status"
+    ],
+    "processTitle": "Verification process",
+    "processBody": "Riders submit their documentation during onboarding. Administrators review this information in the Admin Panel and update the rider's verification status.",
+    "disclaimerTitle": "Important",
+    "disclaimer": "CityRide communicates trust through the verification process defined above. We do not claim guaranteed safety, government certification, automatic background checks, or insurance coverage unless officially confirmed and implemented."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers based on how the CityRide system actually works.",
+    "clientsTitle": "Clients",
+    "ridersTitle": "Riders",
+    "clientItems": [
+      { "q": "What is CityRide?", "a": "CityRide is a mobile platform that helps clients discover nearby riders and connect with them directly." },
+      { "q": "How do I find nearby riders?", "a": "Open the CityRide app and allow location access. Nearby available riders will be shown automatically." },
+      { "q": "What happens when I tap Call?", "a": "Tapping Call creates a Contact Event, which records your attempt to reach that rider." },
+      { "q": "Is a Contact Event the same as a trip?", "a": "No. A Contact Event only records contact intent. A trip follows the separate Trip Request lifecycle." },
+      { "q": "What happens after a Trip Request is created?", "a": "The Trip Request moves through Requested, Accepted or Rejected, In Progress, and finally Completed or Cancelled." },
+      { "q": "What happens if no nearby rider is available?", "a": "The app will let you know that no riders were found nearby so you can try again shortly." }
+    ],
+    "riderItems": [
+      { "q": "How do I become a CityRide rider?", "a": "Create a rider account in the app and complete the onboarding process." },
+      { "q": "What information is required during onboarding?", "a": "You will need to provide identity documentation, license documentation, and vehicle information." },
+      { "q": "How does rider verification work?", "a": "Administrators review your submitted documents in the Admin Panel and update your verification status." },
+      { "q": "How do I go online or offline?", "a": "Use the availability toggle in the app to set yourself online or offline at any time." },
+      { "q": "How is my location updated?", "a": "While you are online, the app shares your current location so nearby clients can discover you." }
+    ]
+  },
+  "download": {
+    "title": "Download the CityRide App",
+    "subtitle": "Get the app to discover nearby riders or join as a verified rider.",
+    "body": "CityRide is available for mobile devices. Use the links below to download the app once it is published to the app stores.",
+    "googlePlay": "Get it on Google Play",
+    "appStore": "Download on the App Store",
+    "qrTitle": "Scan to download",
+    "qrBody": "Scan this QR code with your phone camera to open the download page.",
+    "screensTitle": "A look at the app"
+  },
+  "contact": {
+    "title": "Contact & Support",
+    "subtitle": "Have a question about CityRide? Reach out to our team.",
+    "formName": "Full name",
+    "formEmail": "Email address",
+    "formMessage": "Message",
+    "formSubmit": "Send message",
+    "formSuccess": "Thank you. Your message has been received.",
+    "supportEmail": "Support email",
+    "supportPhone": "Support phone",
+    "office": "Office"
+  },
+  "auth": {
+    "loginTitle": "Admin Login",
+    "loginSubtitle": "Sign in to access the CityRide Admin Panel.",
+    "email": "Email address",
+    "password": "Password",
+    "loginButton": "Sign in",
+    "signingIn": "Signing in...",
+    "invalidCredentials": "Invalid email or password.",
+    "demoHint": "Demo credentials: admin@cityride.rw / admin123",
+    "logout": "Log out"
+  },
+  "admin": {
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "riders": "Riders",
+      "riderVerification": "Rider Verification",
+      "contactEvents": "Contact Events",
+      "tripRequests": "Trip Requests",
+      "notificationLogs": "Notification Logs",
+      "payments": "Payments",
+      "transactions": "Transactions",
+      "roles": "Roles",
+      "appConfig": "App Configuration"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Overview of the CityRide system.",
+      "totalUsers": "Total users",
+      "totalClients": "Total clients",
+      "totalRiders": "Total riders",
+      "pendingVerification": "Pending verification",
+      "ridersOnline": "Riders online now",
+      "contactEventsToday": "Contact Events today",
+      "tripRequestsToday": "Trip Requests today",
+      "tripsInProgress": "Trips in progress",
+      "completedToday": "Completed today",
+      "paymentsToday": "Payments today"
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "All client and rider accounts registered on CityRide.",
+      "searchPlaceholder": "Search by name or email"
+    },
+    "riders": {
+      "title": "Riders",
+      "subtitle": "All riders registered on the platform.",
+      "verificationTitle": "Rider Verification",
+      "verificationSubtitle": "Review pending riders and update their verification status.",
+      "approve": "Verify",
+      "reject": "Reject",
+      "reviewNotesPlaceholder": "Add verification notes (optional)",
+      "viewDocuments": "View documents"
+    },
+    "contactEvents": {
+      "title": "Contact Events",
+      "subtitle": "Records of client attempts to contact riders. Separate from Trip Requests."
+    },
+    "tripRequests": {
+      "title": "Trip Requests",
+      "subtitle": "The full trip lifecycle from request to completion."
+    },
+    "notificationLogs": {
+      "title": "Notification Logs",
+      "subtitle": "Delivery records for rider contact notifications."
+    },
+    "payments": {
+      "title": "Payments",
+      "subtitle": "Payment records linked to trip requests."
+    },
+    "transactions": {
+      "title": "Transactions",
+      "subtitle": "Provider-level transaction records, separate from Payments."
+    },
+    "roles": {
+      "title": "Roles",
+      "subtitle": "Manage administrative roles and permissions.",
+      "addRole": "Add role",
+      "roleName": "Role name",
+      "permissions": "Permissions"
+    },
+    "config": {
+      "title": "App Configuration",
+      "subtitle": "System-wide configuration for the CityRide mobile app.",
+      "launchAreaCenter": "Launch area center",
+      "launchAreaRadius": "Launch area radius (km)",
+      "defaultSearchRadius": "Default search radius (km)",
+      "maxSearchRadius": "Maximum search radius (km)",
+      "locationUpdateInterval": "Location update interval (sec)",
+      "minAppVersion": "Minimum app version",
+      "maintenanceMode": "Maintenance mode"
+    }
+  },
+  "fields": {
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "role": "Role",
+    "active": "Active",
+    "inactive": "Inactive",
+    "lastSeen": "Last seen",
+    "vehicleType": "Vehicle type",
+    "plateNumber": "Plate number",
+    "licenseDocument": "License document",
+    "idDocument": "ID document",
+    "verificationStatus": "Verification status",
+    "verificationNotes": "Verification notes",
+    "online": "Online",
+    "offline": "Offline",
+    "rating": "Rating",
+    "client": "Client",
+    "rider": "Rider",
+    "clientLocation": "Client location",
+    "riderLocation": "Rider location",
+    "distance": "Distance",
+    "contactMethod": "Contact method",
+    "tripRequest": "Trip Request",
+    "origin": "Origin",
+    "destination": "Destination",
+    "contactEvent": "Contact Event",
+    "messageId": "Message ID",
+    "notificationStatus": "Notification status",
+    "errorInfo": "Error information",
+    "sentTime": "Sent time",
+    "amount": "Amount",
+    "currency": "Currency",
+    "paymentMethod": "Payment method",
+    "paymentStatus": "Payment status",
+    "payment": "Payment",
+    "provider": "Provider",
+    "providerReference": "Provider reference",
+    "rawResponse": "Raw response",
+    "permissions": "Permissions",
+    "id": "ID"
+  },
+  "status": {
+    "pending": "Pending",
+    "verified": "Verified",
+    "rejected": "Rejected",
+    "requested": "Requested",
+    "accepted": "Accepted",
+    "in_progress": "In Progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "initiated": "Initiated",
+    "connected": "Connected",
+    "missed": "Missed",
+    "failed": "Failed",
+    "sent": "Sent",
+    "delivered": "Delivered",
+    "success": "Success",
+    "refunded": "Refunded"
+  }
+}

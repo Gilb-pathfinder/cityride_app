@@ -1,0 +1,346 @@
+{
+  "meta": { "siteName": "CityRide" },
+  "common": {
+    "loading": "Birimo gupakira...",
+    "retry": "Ongera ugerageze",
+    "viewAll": "Reba byose",
+    "search": "Shakisha",
+    "filter": "Yungurura",
+    "filterAll": "Byose",
+    "status": "Uko bimeze",
+    "actions": "Ibikorwa",
+    "save": "Bika",
+    "saveChanges": "Bika impinduka",
+    "cancel": "Hagarika",
+    "close": "Funga",
+    "noResults": "Nta bisubizo bibonetse.",
+    "somethingWrong": "Habaye ikibazo. Ongera ugerageze.",
+    "unauthorized": "Ntabwo wemerewe kwinjira kuri iyi paji.",
+    "back": "Subira inyuma",
+    "backToSite": "Subira ku rubuga",
+    "download": "Kuramo",
+    "learnMore": "Menya byinshi",
+    "getStarted": "Tangira",
+    "details": "Amakuru arambuye",
+    "notes": "Inyandiko",
+    "createdAt": "Byaremwe",
+    "updatedAt": "Byavuguruwe",
+    "changesSaved": "Impinduka zabitswe neza.",
+    "unableToLoad": "Ntibishoboka gupakira amakuru. Ongera ugerageze.",
+    "comingSoon": "Biraza vuba",
+    "select": "Hitamo"
+  },
+  "nav": {
+    "home": "Ahabanza",
+    "howItWorks": "Uko CityRide Ikora",
+    "forClients": "Ku Bakiriya",
+    "forRiders": "Ku Batwara Moto",
+    "trust": "Icyizere n'Igenzura",
+    "faq": "Ibibazo Bikunze Kubazwa",
+    "download": "Kuramo Porogaramu",
+    "contact": "Twandikire",
+    "adminLogin": "Kwinjira kw'Umuyobozi"
+  },
+  "footer": {
+    "tagline": "Shaka umuduka wo hafi. Hura mu bwizerane.",
+    "company": "Ikigo",
+    "product": "Igicuruzwa",
+    "resources": "Ibikoresho",
+    "legal": "Amategeko",
+    "privacy": "Politiki y'ibanga",
+    "terms": "Amabwiriza y'ikoreshwa",
+    "rights": "Uburenganzira bwose burarinzwe.",
+    "contactUs": "Twandikire",
+    "adminPanel": "Ikibaho cy'Ubuyobozi"
+  },
+  "home": {
+    "heroEyebrow": "Kuvumbura abatwara moto bakwegereye",
+    "heroTitle": "Shaka umuduka wo hafi. Hura mu bwizerane.",
+    "heroSubtitle": "CityRide ifasha abakiriya kuvumbura abatwara moto bemejwe bakwegereye no guhuza nabo binyuze muri porogaramu yoroshye ishingiye ku hantu uherereye.",
+    "ctaDownload": "Kuramo Porogaramu ya CityRide",
+    "ctaHowItWorks": "Reba uko bikora",
+    "sectionWhatTitle": "CityRide ni iki?",
+    "sectionWhatBody": "CityRide ni urubuga rwa telefone ruhuza abakiriya n'abatwara moto bo hafi yabo. Fungura porogaramu, CityRide ikakwereka abatwara moto bahari bakwegereye kugira ngo ubashe kubavugisha.",
+    "sectionDiscoveryTitle": "Kuvumbura abatwara moto bo hafi",
+    "sectionDiscoveryBody": "Ukoresheje aho uherereye, porogaramu igaragaza abatwara moto bemejwe bakwegereye, hamwe n'intera hagati yanyu n'amakuru y'umwirondoro wabo, kugira ngo uhitemo uwo guhamagara.",
+    "forClientsTitle": "Ku Bakiriya",
+    "forClientsBody": "Vumbura abatwara moto bakwegereye, reba umwirondoro wabo n'intera, hanyuma ubahamagare uva muri porogaramu.",
+    "forRidersTitle": "Ku Batwara Moto",
+    "forRidersBody": "Injira muri CityRide, urangize igenzura, wifungure (online), utangire kubona abakiriya bakwegereye.",
+    "downloadTitle": "Kuramo porogaramu ya CityRide",
+    "downloadBody": "CityRide ikorera cyane cyane kuri telefone. Kuramo porogaramu kugira ngo uvumbure abatwara moto bakwegereye cyangwa winjire nk'umutwara moto wemejwe.",
+    "statsRiders": "Abatwara moto bari ku rubuga",
+    "statsClients": "Abakiriya bakoresha CityRide",
+    "statsCities": "Uturere dukorerwamo"
+  },
+  "howItWorks": {
+    "title": "Uko CityRide Ikora",
+    "subtitle": "Inzira yoroshye kandi isobanutse guhera ku kuvumbura kugeza ku irangira ry'urugendo.",
+    "clientFlowTitle": "Inzira y'umukiriya",
+    "clientFlowSteps": [
+      "Umukiriya afungura porogaramu ya CityRide",
+      "Aho aherereye harakoreshwa kugira ngo hamenyekane",
+      "Abatwara moto bo hafi barabonwa",
+      "Umukiriya arebera amakuru y'umutwara moto",
+      "Umukiriya akanda Hamagara",
+      "Igikorwa cyo Guhamagara (Contact Event) kirakorwa"
+    ],
+    "contactEventTitle": "Guhamagara (Contact Event) na Gusaba Urugendo (Trip Request)",
+    "contactEventBody": "Guhamagara umutwara moto bikora 'Contact Event', ni ukuvuga byandika ko umukiriya yagerageje kuvugana n'uwo mutwara moto. Ntibisobanura ko urugendo rwarangiye.",
+    "tripLifecycleTitle": "Inzira ya Gusaba Urugendo (Trip Request)",
+    "tripLifecycleSteps": [
+      "Guhamagara (Contact Event)",
+      "Gusaba Urugendo (Trip Request)",
+      "Byasabwe",
+      "Byemewe / Byanzwe",
+      "Birimo gukorwa",
+      "Byarangiye / Byahagaritswe"
+    ],
+    "note": "Iyi tandukaniro ni ingenzi mu buryo CityRide ikora: 'Contact Event' yandika ko hari uwagerageje kuvugana, mu gihe 'Trip Request' ikurikiza inzira yayo yihariye kuva mu gusaba kugeza mu irangira."
+  },
+  "forClients": {
+    "title": "Ku Bakiriya",
+    "subtitle": "Ibyo umukiriya ashobora gukora muri porogaramu ya CityRide.",
+    "capabilities": [
+      "Gukoresha kuvumbura abatwara moto ushingiye ku hantu uherereye",
+      "Kureba abatwara moto bakwegereye",
+      "Kureba amakuru y'umutwara moto",
+      "Kureba intera ku mutwara moto wese",
+      "Kureba amanota (rating) y'umutwara moto aho aboneka",
+      "Guhamagara umutwara moto ako kanya",
+      "Kugira uruhare mu nzira ya Trip Request",
+      "Kureba amakuru arebana n'urugendo n'ubwishyu muri porogaramu"
+    ],
+    "note": "Urubuga rwa CityRide rusobanura gusa ibikorwa bibaho koko muri sisitemu."
+  },
+  "forRiders": {
+    "title": "Ku Batwara Moto",
+    "subtitle": "Uko winjira muri CityRide ukanakora nk'umutwara moto wemejwe.",
+    "steps": [
+      "Fungura konti y'umutwara moto",
+      "Uzuza amakuru y'iyandikisha",
+      "Ohereza inyandiko z'indangamuntu n'uruhushya rwo gutwara",
+      "Tanga amakuru y'ikinyabiziga",
+      "Tegereza igenzura",
+      "Shyiraho ko uri online cyangwa offline",
+      "Sangira aho uherereye igihe uri online",
+      "Akira ubutumwa bugusaba kuvugana n'abakiriya",
+      "Gira uruhare mu nzira ya Trip Request"
+    ],
+    "verificationNote": "Igenzura ry'abatwara moto rikorwa binyuze muri sisitemu ya CityRide kandi rigasuzumwa n'abayobozi mu Kibaho cy'Ubuyobozi.",
+    "cta": "Tangira kwiyandikisha muri porogaramu ya CityRide"
+  },
+  "trust": {
+    "title": "Icyizere n'Igenzura",
+    "subtitle": "Uko CityRide igira icyizere hagati y'abakiriya n'abatwara moto.",
+    "infoTitle": "Ibigize amakuru y'umutwara moto",
+    "infoItems": [
+      "Amakuru y'umwirondoro",
+      "Ubwoko bw'ikinyabiziga",
+      "Nomero y'ikinyabiziga",
+      "Inyandiko y'uruhushya rwo gutwara",
+      "Inyandiko y'indangamuntu",
+      "Uko igenzura rihagaze"
+    ],
+    "processTitle": "Inzira y'igenzura",
+    "processBody": "Abatwara moto batanga inyandiko zabo mu gihe cy'iyandikisha. Abayobozi barazisuzuma mu Kibaho cy'Ubuyobozi maze bakavugurura uko igenzura ry'umutwara moto rihagaze.",
+    "disclaimerTitle": "Icyitonderwa",
+    "disclaimer": "CityRide yerekana icyizere binyuze mu nzira y'igenzura yavuzwe haruguru. Ntabwo dutanga ijambo ry'umutekano uzwi neza, icyemezo cya Leta, isuzuma ry'amateka rikorwa mu buryo bwikora, cyangwa ubwishingizi keretse ari ibyemejwe ku mugaragaro kandi bishyizwe mu bikorwa."
+  },
+  "faq": {
+    "title": "Ibibazo Bikunze Kubazwa",
+    "subtitle": "Ibisubizo bishingiye ku buryo sisitemu ya CityRide ikora koko.",
+    "clientsTitle": "Abakiriya",
+    "ridersTitle": "Abatwara Moto",
+    "clientItems": [
+      { "q": "CityRide ni iki?", "a": "CityRide ni urubuga rwa telefone rufasha abakiriya kuvumbura abatwara moto bo hafi no guhuza nabo ako kanya." },
+      { "q": "Nabona nte abatwara moto bankwegereye?", "a": "Fungura porogaramu ya CityRide wemere ko ikoresha aho uherereye. Abatwara moto bahari bakwegereye bazagaragara mu buryo bwikora." },
+      { "q": "Bibaho iki iyo nkanze Hamagara?", "a": "Gukanda Hamagara bikora 'Contact Event', ni ukuvuga byandika ko wagerageje kuvugana n'uwo mutwara moto." },
+      { "q": "Ese Contact Event ni kimwe n'urugendo?", "a": "Oya. Contact Event yandika gusa ko wagerageje kuvugana. Urugendo rukurikiza inzira yihariye ya Trip Request." },
+      { "q": "Bibaho iki nyuma yo gukora Trip Request?", "a": "Trip Request inyura mu ntambwe zikurikira: Yasabwe, Yemewe cyangwa Yanzwe, Irimo gukorwa, hanyuma Yarangiye cyangwa Yahagaritswe." },
+      { "q": "Bibaho iki nta mutwara moto uboneka hafi?", "a": "Porogaramu izakumenyesha ko nta mutwara moto uboneka hafi kugira ngo ugerageze nyuma gato." }
+    ],
+    "riderItems": [
+      { "q": "Nabona nte kuba umutwara moto wa CityRide?", "a": "Fungura konti y'umutwara moto muri porogaramu urangize iyandikisha." },
+      { "q": "Ni ayahe makuru asabwa mu iyandikisha?", "a": "Ugomba gutanga inyandiko y'indangamuntu, iy'uruhushya rwo gutwara, n'amakuru y'ikinyabiziga cyawe." },
+      { "q": "Igenzura ry'abatwara moto rikora rite?", "a": "Abayobozi barasuzuma inyandiko wohereje mu Kibaho cy'Ubuyobozi maze bakavugurura uko igenzura ryawe rihagaze." },
+      { "q": "Nabona nte gushyira status ya online cyangwa offline?", "a": "Koresha akabuto ko kuba uhari muri porogaramu kugira ngo wishyire online cyangwa offline igihe icyo ari cyo cyose." },
+      { "q": "Aho ndi hamenyekana hate?", "a": "Igihe uri online, porogaramu isangira aho uherereye kugira ngo abakiriya bo hafi bakubone." }
+    ]
+  },
+  "download": {
+    "title": "Kuramo Porogaramu ya CityRide",
+    "subtitle": "Kuramo porogaramu kugira ngo uvumbure abatwara moto bakwegereye cyangwa winjire nk'umutwara moto wemejwe.",
+    "body": "CityRide iraboneka kuri telefone zigendanwa. Koresha amahuza akurikira kugira ngo ukuremo porogaramu igihe imaze gushyirwa mu maduka ya porogaramu.",
+    "googlePlay": "Yikuremo kuri Google Play",
+    "appStore": "Yikuremo kuri App Store",
+    "qrTitle": "Skana kugira ngo ukuremo",
+    "qrBody": "Skana iyi kode ya QR ukoresheje kamera ya telefone yawe kugira ngo ufungure paji yo gukurayo.",
+    "screensTitle": "Reba uko porogaramu imeze"
+  },
+  "contact": {
+    "title": "Twandikire & Ubufasha",
+    "subtitle": "Ufite ikibazo kuri CityRide? Twandikire itsinda ryacu.",
+    "formName": "Amazina yombi",
+    "formEmail": "Aderesi email",
+    "formMessage": "Ubutumwa",
+    "formSubmit": "Ohereza ubutumwa",
+    "formSuccess": "Murakoze. Ubutumwa bwanyu bwakiriwe.",
+    "supportEmail": "Email y'ubufasha",
+    "supportPhone": "Telefone y'ubufasha",
+    "office": "Ibiro"
+  },
+  "auth": {
+    "loginTitle": "Kwinjira kw'Umuyobozi",
+    "loginSubtitle": "Injira kugira ngo ubone Ikibaho cy'Ubuyobozi bwa CityRide.",
+    "email": "Aderesi email",
+    "password": "Ijambo ry'ibanga",
+    "loginButton": "Injira",
+    "signingIn": "Kwinjira birimo gukorwa...",
+    "invalidCredentials": "Email cyangwa ijambo ry'ibanga sibyo.",
+    "demoHint": "Ibisabwa by'ikizamini: admin@cityride.rw / admin123",
+    "logout": "Sohoka"
+  },
+  "admin": {
+    "sidebar": {
+      "dashboard": "Ikibaho",
+      "users": "Abakoresha",
+      "riders": "Abatwara Moto",
+      "riderVerification": "Igenzura ry'Abatwara Moto",
+      "contactEvents": "Guhamagara (Contact Events)",
+      "tripRequests": "Gusaba Urugendo",
+      "notificationLogs": "Raporo z'Ubutumwa",
+      "payments": "Ubwishyu",
+      "transactions": "Ibikorwa by'Ubwishyu",
+      "roles": "Inshingano",
+      "appConfig": "Igenamiterere rya Porogaramu"
+    },
+    "dashboard": {
+      "title": "Ikibaho",
+      "subtitle": "Incamake ya sisitemu ya CityRide.",
+      "totalUsers": "Abakoresha bose",
+      "totalClients": "Abakiriya bose",
+      "totalRiders": "Abatwara moto bose",
+      "pendingVerification": "Bategereje igenzura",
+      "ridersOnline": "Abatwara moto bari online ubu",
+      "contactEventsToday": "Guhamagara kwa none",
+      "tripRequestsToday": "Gusaba urugendo kwa none",
+      "tripsInProgress": "Ingendo zirimo gukorwa",
+      "completedToday": "Byarangiye none",
+      "paymentsToday": "Ubwishyu bwa none"
+    },
+    "users": {
+      "title": "Abakoresha",
+      "subtitle": "Konti zose z'abakiriya n'abatwara moto biyandikishije muri CityRide.",
+      "searchPlaceholder": "Shakisha mu izina cyangwa email"
+    },
+    "riders": {
+      "title": "Abatwara Moto",
+      "subtitle": "Abatwara moto bose biyandikishije ku rubuga.",
+      "verificationTitle": "Igenzura ry'Abatwara Moto",
+      "verificationSubtitle": "Suzuma abatwara moto bategereje maze uvugurure uko igenzura ryabo rihagaze.",
+      "approve": "Emeza",
+      "reject": "Anga",
+      "reviewNotesPlaceholder": "Ongeraho inyandiko z'igenzura (si ngombwa)",
+      "viewDocuments": "Reba inyandiko"
+    },
+    "contactEvents": {
+      "title": "Guhamagara (Contact Events)",
+      "subtitle": "Inyandiko z'igihe abakiriya bagerageje kuvugana n'abatwara moto. Bitandukanye na Trip Requests."
+    },
+    "tripRequests": {
+      "title": "Gusaba Urugendo",
+      "subtitle": "Inzira yose y'urugendo kuva ku gusaba kugeza ku irangira."
+    },
+    "notificationLogs": {
+      "title": "Raporo z'Ubutumwa",
+      "subtitle": "Inyandiko z'ubutumwa bwoherejwe ku batwara moto."
+    },
+    "payments": {
+      "title": "Ubwishyu",
+      "subtitle": "Inyandiko z'ubwishyu bufitanye isano na Trip Requests."
+    },
+    "transactions": {
+      "title": "Ibikorwa by'Ubwishyu",
+      "subtitle": "Inyandiko z'ibikorwa by'ubwishyu ku rwego rw'utanga serivisi, bitandukanye n'Ubwishyu."
+    },
+    "roles": {
+      "title": "Inshingano",
+      "subtitle": "Genzura inshingano z'ubuyobozi n'uburenganzira.",
+      "addRole": "Ongeraho inshingano",
+      "roleName": "Izina ry'inshingano",
+      "permissions": "Uburenganzira"
+    },
+    "config": {
+      "title": "Igenamiterere rya Porogaramu",
+      "subtitle": "Igenamiterere rusange rya porogaramu ya CityRide.",
+      "launchAreaCenter": "Aho urwego rwo gutangiriraho ruherereye",
+      "launchAreaRadius": "Uburebure bw'urwego rwo gutangiriraho (km)",
+      "defaultSearchRadius": "Uburebure busanzwe bwo gushakisha (km)",
+      "maxSearchRadius": "Uburebure ntarengwa bwo gushakisha (km)",
+      "locationUpdateInterval": "Igihe cyo kuvugurura aho uherereye (amasegonda)",
+      "minAppVersion": "Verisiyo ntoya ya porogaramu isabwa",
+      "maintenanceMode": "Uburyo bwo gusana sisitemu"
+    }
+  },
+  "fields": {
+    "fullName": "Amazina yombi",
+    "email": "Email",
+    "phone": "Telefone",
+    "role": "Inshingano",
+    "active": "Arakora",
+    "inactive": "Ntarakora",
+    "lastSeen": "Yagaragaye ubwa nyuma",
+    "vehicleType": "Ubwoko bw'ikinyabiziga",
+    "plateNumber": "Nomero y'ikinyabiziga",
+    "licenseDocument": "Inyandiko y'uruhushya",
+    "idDocument": "Inyandiko y'indangamuntu",
+    "verificationStatus": "Uko igenzura rihagaze",
+    "verificationNotes": "Inyandiko z'igenzura",
+    "online": "Ari kuri interineti",
+    "offline": "Ntari kuri interineti",
+    "rating": "Amanota",
+    "client": "Umukiriya",
+    "rider": "Umutwara moto",
+    "clientLocation": "Aho umukiriya aherereye",
+    "riderLocation": "Aho umutwara moto aherereye",
+    "distance": "Intera",
+    "contactMethod": "Uburyo bwo kuvugana",
+    "tripRequest": "Gusaba Urugendo",
+    "origin": "Aho baturutse",
+    "destination": "Aho bajya",
+    "contactEvent": "Guhamagara",
+    "messageId": "Nomero y'ubutumwa",
+    "notificationStatus": "Uko ubutumwa buhagaze",
+    "errorInfo": "Amakuru y'ikosa",
+    "sentTime": "Igihe bwoherejwe",
+    "amount": "Amafaranga",
+    "currency": "Ifaranga rikoreshwa",
+    "paymentMethod": "Uburyo bwo kwishyura",
+    "paymentStatus": "Uko ubwishyu buhagaze",
+    "payment": "Ubwishyu",
+    "provider": "Utanga serivisi",
+    "providerReference": "Nomero y'utanga serivisi",
+    "rawResponse": "Igisubizo cyuzuye",
+    "permissions": "Uburenganzira",
+    "id": "ID"
+  },
+  "status": {
+    "pending": "Bitegerejwe",
+    "verified": "Byemejwe",
+    "rejected": "Byanzwe",
+    "requested": "Byasabwe",
+    "accepted": "Byemewe",
+    "in_progress": "Birimo gukorwa",
+    "completed": "Byarangiye",
+    "cancelled": "Byahagaritswe",
+    "initiated": "Byatangijwe",
+    "connected": "Byahujwe",
+    "missed": "Byatakaye",
+    "failed": "Byanze",
+    "sent": "Byoherejwe",
+    "delivered": "Byageze",
+    "success": "Byagenze neza",
+    "refunded": "Byasubijwe"
+  }
+}
