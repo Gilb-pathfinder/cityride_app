@@ -17,8 +17,7 @@ const toneMap: Record<string, "neutral" | "success" | "warning" | "error" | "inf
   missed: "warning",
   failed: "error",
   sent: "info",
-  delivered: "success",
-  success: "success",
+  delivered: "success",  success: "success",
   refunded: "neutral",
 };
 

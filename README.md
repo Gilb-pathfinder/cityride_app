@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CityRide Web Frontend
 
-## Getting Started
+A multilingual (English / Kinyarwanda / French) web frontend for CityRide, consisting of a public marketing site and a protected admin dashboard. Built with Next.js App Router, React, and Tailwind CSS. Currently runs against a mock API layer (`lib/api/`, `lib/mock/`) shaped to match the approved CityRide backend spec, so it can be pointed at the real backend later without UI changes.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The admin dashboard is reachable at `/admin/login` (demo credentials: `admin@cityride.rw` / `admin123`) — it isn't linked from the public nav by design.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/(site)/` — public marketing pages (Home, How It Works, About, FAQ, Download, Contact)
+- `app/admin/` — admin login and dashboard (Users, Riders & verification, Contact Events, Trip Requests, Notification Logs, Payments, Transactions, Roles, App Configuration)
+- `components/site/`, `components/admin/`, `components/ui/` — shared UI building blocks
+- `lib/i18n/` — translation dictionaries (`en`/`rw`/`fr`) and the `useI18n` hook
+- `lib/api/` — mock-first service layer; each function maps to a real backend endpoint (documented inline) for a straightforward swap later
+- `lib/mock/` — fixed mock data matching the approved entity schema
+- `lib/auth/` — client-side admin session handling
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` — start the dev server
+- `npm run build` — production build
+- `npm run lint` — run ESLint
