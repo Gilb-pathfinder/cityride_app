@@ -32,14 +32,15 @@
   },
   "nav": {
     "home": "Accueil",
-    "howItWorks": "Comment fonctionne CityRide",
-    "forClients": "Pour les clients",
-    "forRiders": "Pour les conducteurs",
-    "trust": "Confiance et vérification",
+    "howItWorks": "Comment ça marche",
+    "about": "À propos",
     "faq": "FAQ",
-    "download": "Télécharger l'application",
-    "contact": "Contact",
-    "adminLogin": "Connexion administrateur"
+    "download": "Télécharger l'app",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "À propos de CityRide",
+    "subtitle": "Pour les clients, pour les conducteurs, et comment la confiance fonctionne sur la plateforme."
   },
   "footer": {
     "tagline": "Trouvez un conducteur à proximité. Connectez-vous en toute confiance.",
@@ -50,8 +51,7 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "rights": "Tous droits réservés.",
-    "contactUs": "Nous contacter",
-    "adminPanel": "Panneau d'administration"
+    "contactUs": "Nous contacter"
   },
   "home": {
     "heroEyebrow": "Découverte de conducteurs à proximité",

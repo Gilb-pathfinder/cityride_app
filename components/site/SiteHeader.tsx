@@ -11,11 +11,8 @@ import { Button } from "@/components/ui/Button";
 const NAV_ITEMS: { href: string; key: string }[] = [
   { href: "/", key: "home" },
   { href: "/how-it-works", key: "howItWorks" },
-  { href: "/for-clients", key: "forClients" },
-  { href: "/for-riders", key: "forRiders" },
-  { href: "/trust-verification", key: "trust" },
+  { href: "/about", key: "about" },
   { href: "/faq", key: "faq" },
-  { href: "/contact", key: "contact" },
 ];
 
 export function SiteHeader() {
@@ -24,19 +21,19 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Logo />
+    <header className="absolute inset-x-0 top-0 z-30">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-6">
+        <Logo dark />
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden items-center gap-1 rounded-full border border-white/15 bg-white/5 p-1.5 backdrop-blur lg:flex">
           {NAV_ITEMS.map((item) => {
             const active = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                  active ? "bg-surface-muted text-navy" : "text-text-secondary hover:text-navy"
+                className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  active ? "bg-lime text-navy" : "text-white/75 hover:text-white"
                 }`}
               >
                 {t(`nav.${item.key}`)}
@@ -46,10 +43,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <LanguageSwitcher />
-          <Button href="/admin/login" variant="outline" size="sm">
-            {t("nav.adminLogin")}
-          </Button>
+          <LanguageSwitcher dark />
           <Button href="/download" size="sm">
             {t("nav.download")}
           </Button>
@@ -57,7 +51,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-border lg:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -68,7 +62,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-surface px-5 py-4 lg:hidden">
+        <div className="mx-5 rounded-2xl border border-white/15 bg-navy px-5 py-4 lg:hidden">
           <nav className="flex flex-col gap-1">
             {NAV_ITEMS.map((item) => (
               <Link
@@ -76,7 +70,7 @@ export function SiteHeader() {
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className={`rounded-md px-3 py-2.5 text-sm font-medium ${
-                  pathname === item.href ? "bg-surface-muted text-navy" : "text-text-secondary"
+                  pathname === item.href ? "bg-lime text-navy" : "text-white/75"
                 }`}
               >
                 {t(`nav.${item.key}`)}
@@ -84,10 +78,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <div className="mt-4 flex flex-col gap-3">
-            <LanguageSwitcher />
-            <Button href="/admin/login" variant="outline" size="sm">
-              {t("nav.adminLogin")}
-            </Button>
+            <LanguageSwitcher dark />
             <Button href="/download" size="sm">
               {t("nav.download")}
             </Button>

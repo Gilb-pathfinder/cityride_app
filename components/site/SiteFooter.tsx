@@ -10,16 +10,13 @@ export function SiteFooter() {
 
   const productLinks = [
     { href: "/how-it-works", key: "nav.howItWorks" },
-    { href: "/for-clients", key: "nav.forClients" },
-    { href: "/for-riders", key: "nav.forRiders" },
+    { href: "/about", key: "nav.about" },
     { href: "/download", key: "nav.download" },
   ];
 
   const resourceLinks = [
-    { href: "/trust-verification", key: "nav.trust" },
     { href: "/faq", key: "nav.faq" },
     { href: "/contact", key: "nav.contact" },
-    { href: "/admin/login", key: "footer.adminPanel" },
   ];
 
   return (

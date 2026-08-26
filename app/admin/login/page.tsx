@@ -39,7 +39,7 @@ export default function AdminLoginPage() {
         <Logo dark />
         <div>
           <h1 className="max-w-sm text-3xl font-bold leading-tight tracking-tight">
-            {t("footer.adminPanel")}
+            {t("auth.loginTitle")}
           </h1>
           <p className="mt-4 max-w-sm text-sm text-white/60">{t("home.heroSubtitle")}</p>
         </div>

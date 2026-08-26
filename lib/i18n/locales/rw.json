@@ -32,14 +32,15 @@
   },
   "nav": {
     "home": "Ahabanza",
-    "howItWorks": "Uko CityRide Ikora",
-    "forClients": "Ku Bakiriya",
-    "forRiders": "Ku Batwara Moto",
-    "trust": "Icyizere n'Igenzura",
+    "howItWorks": "Uko Bikora",
+    "about": "Ibitureba",
     "faq": "Ibibazo Bikunze Kubazwa",
     "download": "Kuramo Porogaramu",
-    "contact": "Twandikire",
-    "adminLogin": "Kwinjira kw'Umuyobozi"
+    "contact": "Twandikire"
+  },
+  "about": {
+    "title": "Ibitureba kuri CityRide",
+    "subtitle": "Ku bakiriya, ku batwara moto, n'uko icyizere gikorera kuri urubuga."
   },
   "footer": {
     "tagline": "Shaka umuduka wo hafi. Hura mu bwizerane.",
@@ -50,8 +51,7 @@
     "privacy": "Politiki y'ibanga",
     "terms": "Amabwiriza y'ikoreshwa",
     "rights": "Uburenganzira bwose burarinzwe.",
-    "contactUs": "Twandikire",
-    "adminPanel": "Ikibaho cy'Ubuyobozi"
+    "contactUs": "Twandikire"
   },
   "home": {
     "heroEyebrow": "Kuvumbura abatwara moto bakwegereye",

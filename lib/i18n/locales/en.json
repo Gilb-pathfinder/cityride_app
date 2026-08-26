@@ -32,14 +32,11 @@
   },
   "nav": {
     "home": "Home",
-    "howItWorks": "How CityRide Works",
-    "forClients": "For Clients",
-    "forRiders": "For Riders",
-    "trust": "Trust & Verification",
-    "faq": "FAQ",
-    "download": "Download the App",
-    "contact": "Contact",
-    "adminLogin": "Admin Login"
+    "howItWorks": "How It Works",
+    "about": "About",
+    "faq": "FAQs",
+    "download": "Download App",
+    "contact": "Contact"
   },
   "footer": {
     "tagline": "Find a nearby ride. Connect with confidence.",
@@ -50,8 +47,11 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "rights": "All rights reserved.",
-    "contactUs": "Contact us",
-    "adminPanel": "Admin Panel"
+    "contactUs": "Contact us"
+  },
+  "about": {
+    "title": "About CityRide",
+    "subtitle": "For clients, for riders, and how trust works across the platform."
   },
   "home": {
     "heroEyebrow": "Location-based rider discovery",

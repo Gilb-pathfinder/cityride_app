@@ -13,7 +13,7 @@ export function PageHero({
 }) {
   return (
     <section className="border-b border-border bg-navy text-white">
-      <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-5 pb-16 pt-36 sm:pb-20 sm:pt-44">
         {eyebrow && (
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-lime">
             {eyebrow}
@@ -30,22 +30,26 @@ export function PageHero({
 }
 
 export function Section({
+  id,
   className = "",
   bleed = false,
   children,
 }: {
+  id?: string;
   className?: string;
   bleed?: boolean;
   children: ReactNode;
 }) {
   if (bleed) {
     return (
-      <section className={className}>
+      <section id={id} className={className}>
         <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">{children}</div>
       </section>
     );
   }
   return (
-    <section className={`mx-auto max-w-6xl px-5 py-16 sm:py-20 ${className}`}>{children}</section>
+    <section id={id} className={`mx-auto max-w-6xl px-5 py-16 sm:py-20 ${className}`}>
+      {children}
+    </section>
   );
 }
