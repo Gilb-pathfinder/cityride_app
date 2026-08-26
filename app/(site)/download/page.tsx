@@ -2,11 +2,16 @@
 
 import { useI18n } from "@/lib/i18n/context";
 import { PageHero, Section } from "@/components/site/PageHero";
-import { Badge } from "@/components/ui/Badge";
+import { APP_STORE_LINKS } from "@/lib/config/appLinks";
 
-function StoreButton({ label, sub }: { label: string; sub: string }) {
+function StoreButton({ href, label, sub }: { href: string; label: string; sub: string }) {
   return (
-    <div className="flex w-full items-center gap-3 rounded-md border border-border bg-surface-muted px-5 py-3.5 opacity-70 sm:w-64">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex w-full items-center gap-3 rounded-md border border-border bg-surface-muted px-5 py-3.5 transition-colors hover:bg-surface sm:w-64"
+    >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="text-navy">
         <rect x="6" y="2.5" width="12" height="19" rx="2" />
         <path d="M10 18.5h4" />
@@ -15,7 +20,7 @@ function StoreButton({ label, sub }: { label: string; sub: string }) {
         <p className="text-[11px] uppercase tracking-wide text-text-secondary">{sub}</p>
         <p className="text-sm font-bold text-navy">{label}</p>
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -48,14 +53,8 @@ export default function DownloadPage() {
             <p className="max-w-md text-sm leading-relaxed text-text-secondary">{t("download.body")}</p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <div className="flex flex-col gap-2">
-                <StoreButton label={t("download.googlePlay")} sub="Get it on" />
-                <Badge tone="neutral">{t("common.comingSoon")}</Badge>
-              </div>
-              <div className="flex flex-col gap-2">
-                <StoreButton label={t("download.appStore")} sub="Download on the" />
-                <Badge tone="neutral">{t("common.comingSoon")}</Badge>
-              </div>
+              <StoreButton href={APP_STORE_LINKS.playStore} label={t("download.googlePlay")} sub="Get it on" />
+              <StoreButton href={APP_STORE_LINKS.appStore} label={t("download.appStore")} sub="Download on the" />
             </div>
           </div>
 

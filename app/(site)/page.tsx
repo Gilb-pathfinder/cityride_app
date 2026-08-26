@@ -2,6 +2,7 @@
 
 import { useI18n } from "@/lib/i18n/context";
 import { Button } from "@/components/ui/Button";
+import { DownloadAppButton } from "@/components/site/DownloadAppButton";
 import { Section } from "@/components/site/PageHero";
 
 function PinIcon() {
@@ -40,7 +41,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative flex min-h-[94vh] items-center overflow-hidden bg-navy text-white">
+      <section className="relative flex min-h-dvh items-center overflow-hidden bg-navy text-white">
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src="/videos/motor.mp4"
@@ -49,24 +50,21 @@ export default function HomePage() {
           loop
           playsInline
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/85 to-navy/35" />
-        <div className="absolute inset-0 bg-navy/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/50 to-navy/20" />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-20 pt-40 sm:pb-28 sm:pt-48">
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-10">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-lime backdrop-blur">
             {t("home.heroEyebrow")}
           </span>
-          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 max-w-2xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             <span className="text-white">{heroLead}</span>{" "}
             {heroTail && <span className="font-medium text-white/45">{heroTail}</span>}
           </h1>
-          <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70">
+          <p className="mt-3 max-w-lg text-base leading-relaxed text-white/70">
             {t("home.heroSubtitle")}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button href="/download" size="lg">
-              {t("home.ctaDownload")}
-            </Button>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <DownloadAppButton size="lg">{t("home.ctaDownload")}</DownloadAppButton>
             <Button
               href="/how-it-works"
               variant="outline"
@@ -75,6 +73,40 @@ export default function HomePage() {
             >
               {t("home.ctaHowItWorks")}
             </Button>
+          </div>
+        </div>
+
+        <div className="absolute bottom-6 right-5 z-10 hidden w-72 rounded-xl border border-white/15 bg-navy/70 p-4 backdrop-blur-md sm:right-8 sm:block lg:bottom-10 lg:right-12">
+          <div className="mb-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-white/50">
+            <span>{t("home.sectionDiscoveryTitle")}</span>
+            <span className="flex items-center gap-1.5 text-lime">
+              <span className="h-1.5 w-1.5 rounded-full bg-lime" /> Live
+            </span>
+          </div>
+          <div className="flex flex-col gap-2.5">
+            {[
+              { name: "Jean Bosco N.", dist: "0.8 km", rating: "4.9" },
+              { name: "Claudine M.", dist: "1.2 km", rating: "4.7" },
+              { name: "Emmanuel N.", dist: "1.6 km", rating: "4.8" },
+            ].map((r) => (
+              <div
+                key={r.name}
+                className="flex items-center justify-between rounded-lg border border-white/10 bg-white/5 px-3 py-2.5"
+              >
+                <div className="flex items-center gap-2.5">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime text-navy">
+                    <PinIcon />
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-white">{r.name}</p>
+                    <p className="text-xs text-white/50">
+                      {r.dist} away · {r.rating}★
+                    </p>
+                  </div>
+                </div>
+                <span className="rounded-full bg-lime px-2.5 py-1 text-xs font-semibold text-navy">Call</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -126,9 +158,7 @@ export default function HomePage() {
         <div className="flex flex-col items-center gap-5 rounded-xl border border-border bg-navy px-6 py-14 text-center text-white">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{t("home.downloadTitle")}</h2>
           <p className="max-w-lg text-sm text-white/70">{t("home.downloadBody")}</p>
-          <Button href="/download" size="lg">
-            {t("home.ctaDownload")}
-          </Button>
+          <DownloadAppButton size="lg">{t("home.ctaDownload")}</DownloadAppButton>
         </div>
       </Section>
     </>

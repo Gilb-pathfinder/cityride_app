@@ -2,7 +2,7 @@
 
 import { useI18n } from "@/lib/i18n/context";
 import { PageHero, Section } from "@/components/site/PageHero";
-import { Button } from "@/components/ui/Button";
+import { DownloadAppButton } from "@/components/site/DownloadAppButton";
 
 function CheckIcon() {
   return (
@@ -59,9 +59,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-8 flex justify-center">
-          <Button href="/download" size="lg">
-            {t("forRiders.cta")}
-          </Button>
+          <DownloadAppButton size="lg">{t("forRiders.cta")}</DownloadAppButton>
         </div>
       </Section>
 

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n/context";
 import { Logo } from "./Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Button } from "@/components/ui/Button";
+import { DownloadAppButton } from "./DownloadAppButton";
 
 const NAV_ITEMS: { href: string; key: string }[] = [
   { href: "/", key: "home" },
@@ -22,10 +22,15 @@ export function SiteHeader() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-6">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-navy/80 via-navy/35 to-transparent"
+      />
+
+      <div className="relative mx-auto flex max-w-6xl items-center justify-between px-5 py-6">
         <Logo dark />
 
-        <nav className="hidden items-center gap-1 rounded-full border border-white/15 bg-white/5 p-1.5 backdrop-blur lg:flex">
+        <nav className="hidden items-center gap-1 rounded-full border border-white/15 bg-navy/50 p-1.5 backdrop-blur lg:flex">
           {NAV_ITEMS.map((item) => {
             const active = pathname === item.href;
             return (
@@ -33,7 +38,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  active ? "bg-lime text-navy" : "text-white/75 hover:text-white"
+                  active ? "bg-lime text-navy" : "text-white hover:text-lime"
                 }`}
               >
                 {t(`nav.${item.key}`)}
@@ -44,9 +49,9 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitcher dark />
-          <Button href="/download" size="sm">
+          <DownloadAppButton size="sm">
             {t("nav.download")}
-          </Button>
+          </DownloadAppButton>
         </div>
 
         <button
@@ -70,7 +75,7 @@ export function SiteHeader() {
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className={`rounded-md px-3 py-2.5 text-sm font-medium ${
-                  pathname === item.href ? "bg-lime text-navy" : "text-white/75"
+                  pathname === item.href ? "bg-lime text-navy" : "text-white"
                 }`}
               >
                 {t(`nav.${item.key}`)}
@@ -79,9 +84,9 @@ export function SiteHeader() {
           </nav>
           <div className="mt-4 flex flex-col gap-3">
             <LanguageSwitcher dark />
-            <Button href="/download" size="sm">
+            <DownloadAppButton size="sm">
               {t("nav.download")}
-            </Button>
+            </DownloadAppButton>
           </div>
         </div>
       )}

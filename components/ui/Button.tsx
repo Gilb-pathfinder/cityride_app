@@ -36,6 +36,7 @@ interface ButtonAsButton
 interface ButtonAsLink extends CommonProps {
   href: string;
   external?: boolean;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;
@@ -45,16 +46,16 @@ export function Button(props: ButtonProps) {
   const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
 
   if ("href" in props && props.href) {
-    const { href, external } = props;
+    const { href, external, onClick } = props;
     if (external) {
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+        <a href={href} target="_blank" rel="noopener noreferrer" className={classes} onClick={onClick}>
           {children}
         </a>
       );
     }
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} onClick={onClick}>
         {children}
       </Link>
     );

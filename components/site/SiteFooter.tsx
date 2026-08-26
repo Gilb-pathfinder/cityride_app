@@ -3,10 +3,19 @@
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n/context";
 import { Logo } from "./Logo";
+import { detectMobileStoreUrl } from "@/lib/config/appLinks";
 
 export function SiteFooter() {
   const { t } = useI18n();
   const year = new Date().getFullYear();
+
+  function handleDownloadClick(e: React.MouseEvent<HTMLAnchorElement>) {
+    const storeUrl = detectMobileStoreUrl();
+    if (storeUrl) {
+      e.preventDefault();
+      window.open(storeUrl, "_blank", "noopener,noreferrer");
+    }
+  }
 
   const productLinks = [
     { href: "/how-it-works", key: "nav.howItWorks" },
@@ -32,7 +41,11 @@ export function SiteFooter() {
           <ul className="flex flex-col gap-2.5">
             {productLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm text-white/70 hover:text-lime">
+                <Link
+                  href={l.href}
+                  onClick={l.href === "/download" ? handleDownloadClick : undefined}
+                  className="text-sm text-white hover:text-lime"
+                >
                   {t(l.key)}
                 </Link>
               </li>
@@ -45,7 +58,7 @@ export function SiteFooter() {
           <ul className="flex flex-col gap-2.5">
             {resourceLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm text-white/70 hover:text-lime">
+                <Link href={l.href} className="text-sm text-white hover:text-lime">
                   {t(l.key)}
                 </Link>
               </li>
