@@ -3,6 +3,8 @@
 import { useI18n } from "@/lib/i18n/context";
 import { PageHero, Section } from "@/components/site/PageHero";
 import { APP_STORE_LINKS } from "@/lib/config/appLinks";
+import { Reveal } from "@/components/ui/Reveal";
+import { cardHoverClass } from "@/components/ui/Card";
 
 function StoreButton({ href, label, sub }: { href: string; label: string; sub: string }) {
   return (
@@ -10,7 +12,7 @@ function StoreButton({ href, label, sub }: { href: string; label: string; sub: s
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex w-full items-center gap-3 rounded-md border border-border bg-surface-muted px-5 py-3.5 transition-colors hover:bg-surface sm:w-64"
+      className={`flex w-full items-center gap-3 rounded-md border border-border bg-surface-muted px-5 py-3.5 hover:bg-surface sm:w-64 ${cardHoverClass}`}
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className="text-navy">
         <rect x="6" y="2.5" width="12" height="19" rx="2" />
@@ -27,7 +29,7 @@ function StoreButton({ href, label, sub }: { href: string; label: string; sub: s
 function QrPlaceholder() {
   const cells = Array.from({ length: 49 });
   return (
-    <div className="grid grid-cols-7 gap-1 rounded-lg border border-border bg-white p-3">
+    <div className="grid grid-cols-7 gap-1 rounded-lg border border-border bg-surface p-3">
       {cells.map((_, i) => (
         <span
           key={i}
@@ -49,31 +51,34 @@ export default function DownloadPage() {
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div>
+          <Reveal>
             <p className="max-w-md text-sm leading-relaxed text-text-secondary">{t("download.body")}</p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <StoreButton href={APP_STORE_LINKS.playStore} label={t("download.googlePlay")} sub="Get it on" />
               <StoreButton href={APP_STORE_LINKS.appStore} label={t("download.appStore")} sub="Download on the" />
             </div>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col items-center gap-4 rounded-xl border border-border p-8 text-center">
+          <Reveal delay={100} className="flex flex-col items-center gap-4 rounded-xl border border-border p-8 text-center">
             <h3 className="text-sm font-bold text-navy">{t("download.qrTitle")}</h3>
             <QrPlaceholder />
             <p className="max-w-xs text-xs text-text-secondary">{t("download.qrBody")}</p>
-          </div>
+          </Reveal>
         </div>
       </Section>
 
       <Section bleed className="border-t border-border bg-surface-muted">
         <div>
-          <h2 className="text-center text-xl font-bold text-navy">{t("download.screensTitle")}</h2>
+          <Reveal className="text-center">
+            <h2 className="text-xl font-bold text-navy">{t("download.screensTitle")}</h2>
+          </Reveal>
           <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-4">
             {[0, 1, 2, 3].map((i) => (
-              <div
+              <Reveal
                 key={i}
-                className="mx-auto flex aspect-[9/19] w-full max-w-[160px] flex-col items-center justify-center rounded-2xl border-4 border-navy bg-white p-3"
+                delay={i * 80}
+                className="mx-auto flex aspect-[9/19] w-full max-w-[160px] flex-col items-center justify-center rounded-2xl border-4 border-navy bg-surface p-3 transition-transform duration-300 hover:-translate-y-1"
               >
                 <div className="flex h-full w-full flex-col justify-between rounded-lg border border-border bg-surface-muted p-3">
                   <div className="h-2 w-10 rounded-full bg-border" />
@@ -87,7 +92,7 @@ export default function DownloadPage() {
                   </div>
                   <div className="h-2 w-full rounded-full bg-border" />
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

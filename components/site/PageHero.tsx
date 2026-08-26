@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Reveal } from "@/components/ui/Reveal";
 
 export function PageHero({
   eyebrow,
@@ -13,7 +14,7 @@ export function PageHero({
 }) {
   return (
     <section className="border-b border-border bg-navy text-white">
-      <div className="mx-auto max-w-6xl px-5 pb-16 pt-36 sm:pb-20 sm:pt-44">
+      <Reveal className="mx-auto max-w-6xl px-5 pb-16 pt-36 sm:pb-20 sm:pt-44" duration={800}>
         {eyebrow && (
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-lime">
             {eyebrow}
@@ -24,7 +25,7 @@ export function PageHero({
         </h1>
         {subtitle && <p className="mt-4 max-w-xl text-base text-white/70">{subtitle}</p>}
         {children}
-      </div>
+      </Reveal>
     </section>
   );
 }

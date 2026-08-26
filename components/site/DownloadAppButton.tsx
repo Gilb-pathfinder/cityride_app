@@ -24,7 +24,7 @@ export function DownloadAppButton({ size = "md", variant = "primary", className 
   }
 
   return (
-    <Button href="/download" size={size} variant={variant} className={className} onClick={handleClick}>
+    <Button href="/download" size={size} variant={variant} animated className={className} onClick={handleClick}>
       {children}
     </Button>
   );

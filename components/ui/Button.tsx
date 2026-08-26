@@ -18,11 +18,15 @@ const sizeClasses: Record<Size, string> = {
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed";
+  "inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed";
+
+const animatedClasses = "hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:scale-[0.97]";
 
 interface CommonProps {
   variant?: Variant;
   size?: Size;
+  /** Adds a subtle lift/shadow on hover. Used on the public site; leave off in the admin panel. */
+  animated?: boolean;
   children: ReactNode;
   className?: string;
 }
@@ -42,8 +46,10 @@ interface ButtonAsLink extends CommonProps {
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 export function Button(props: ButtonProps) {
-  const { variant = "primary", size = "md", children, className = "" } = props;
-  const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
+  const { variant = "primary", size = "md", animated = false, children, className = "" } = props;
+  const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${
+    animated ? animatedClasses : ""
+  } ${className}`;
 
   if ("href" in props && props.href) {
     const { href, external, onClick } = props;

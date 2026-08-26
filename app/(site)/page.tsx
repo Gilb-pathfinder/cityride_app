@@ -4,6 +4,9 @@ import { useI18n } from "@/lib/i18n/context";
 import { Button } from "@/components/ui/Button";
 import { DownloadAppButton } from "@/components/site/DownloadAppButton";
 import { Section } from "@/components/site/PageHero";
+import { Reveal } from "@/components/ui/Reveal";
+import { CountUp } from "@/components/ui/CountUp";
+import { cardHoverClass } from "@/components/ui/Card";
 
 function PinIcon() {
   return (
@@ -41,7 +44,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative flex min-h-dvh items-center overflow-hidden bg-navy text-white">
+      <section className="relative flex min-h-dvh items-end overflow-hidden bg-navy text-white">
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src="/videos/motor.mp4"
@@ -52,7 +55,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/50 to-navy/20" />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-5 py-10">
+        <Reveal className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-14 sm:pb-16" duration={900}>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-lime backdrop-blur">
             {t("home.heroEyebrow")}
           </span>
@@ -69,12 +72,13 @@ export default function HomePage() {
               href="/how-it-works"
               variant="outline"
               size="lg"
+              animated
               className="border-white/30 text-white hover:bg-white/10"
             >
               {t("home.ctaHowItWorks")}
             </Button>
           </div>
-        </div>
+        </Reveal>
 
         <div className="absolute bottom-6 right-5 z-10 hidden w-72 rounded-xl border border-white/15 bg-navy/70 p-4 backdrop-blur-md sm:right-8 sm:block lg:bottom-10 lg:right-12">
           <div className="mb-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-white/50">
@@ -91,7 +95,7 @@ export default function HomePage() {
             ].map((r) => (
               <div
                 key={r.name}
-                className="flex items-center justify-between rounded-lg border border-white/10 bg-white/5 px-3 py-2.5"
+                className="flex items-center justify-between rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 transition-colors duration-300 hover:border-lime/40 hover:bg-white/10"
               >
                 <div className="flex items-center gap-2.5">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-lime text-navy">
@@ -113,24 +117,28 @@ export default function HomePage() {
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div>
+          <Reveal>
             <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">
               {t("home.sectionWhatTitle")}
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-text-secondary">
               {t("home.sectionWhatBody")}
             </p>
-          </div>
+          </Reveal>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { label: t("home.statsRiders"), value: "500+" },
-              { label: t("home.statsClients"), value: "12k+" },
-              { label: t("home.statsCities"), value: "6" },
-            ].map((stat) => (
-              <div key={stat.label} className="rounded-xl border border-border p-5 text-center">
-                <p className="text-2xl font-bold text-navy">{stat.value}</p>
-                <p className="mt-1.5 text-xs text-text-secondary">{stat.label}</p>
-              </div>
+              { label: t("home.statsRiders"), value: 500, suffix: "+" },
+              { label: t("home.statsClients"), value: 12, suffix: "k+" },
+              { label: t("home.statsCities"), value: 6, suffix: "" },
+            ].map((stat, i) => (
+              <Reveal key={stat.label} delay={i * 100}>
+                <div className={`rounded-xl border border-border p-5 text-center ${cardHoverClass}`}>
+                  <p className="text-2xl font-bold text-navy">
+                    <CountUp end={stat.value} suffix={stat.suffix} />
+                  </p>
+                  <p className="mt-1.5 text-xs text-text-secondary">{stat.label}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -142,24 +150,26 @@ export default function HomePage() {
             { icon: <PinIcon />, title: t("home.sectionDiscoveryTitle"), body: t("home.sectionDiscoveryBody") },
             { icon: <PhoneIcon />, title: t("home.forClientsTitle"), body: t("home.forClientsBody") },
             { icon: <ShieldIcon />, title: t("home.forRidersTitle"), body: t("home.forRidersBody") },
-          ].map((card) => (
-            <div key={card.title} className="rounded-xl border border-border bg-surface p-6">
-              <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-navy text-lime">
-                {card.icon}
-              </span>
-              <h3 className="text-lg font-semibold text-navy">{card.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-secondary">{card.body}</p>
-            </div>
+          ].map((card, i) => (
+            <Reveal key={card.title} delay={i * 100}>
+              <div className={`rounded-xl border border-border bg-surface p-6 ${cardHoverClass}`}>
+                <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-navy text-lime">
+                  {card.icon}
+                </span>
+                <h3 className="text-lg font-semibold text-navy">{card.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">{card.body}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
       </Section>
 
       <Section className="border-t border-border">
-        <div className="flex flex-col items-center gap-5 rounded-xl border border-border bg-navy px-6 py-14 text-center text-white">
+        <Reveal className="flex flex-col items-center gap-5 rounded-xl border border-border bg-navy px-6 py-14 text-center text-white">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{t("home.downloadTitle")}</h2>
           <p className="max-w-lg text-sm text-white/70">{t("home.downloadBody")}</p>
           <DownloadAppButton size="lg">{t("home.ctaDownload")}</DownloadAppButton>
-        </div>
+        </Reveal>
       </Section>
     </>
   );

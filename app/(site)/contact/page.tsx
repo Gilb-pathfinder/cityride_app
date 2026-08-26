@@ -5,6 +5,8 @@ import { useI18n } from "@/lib/i18n/context";
 import { PageHero, Section } from "@/components/site/PageHero";
 import { Button } from "@/components/ui/Button";
 import { Input, Label, Textarea } from "@/components/ui/Form";
+import { Reveal } from "@/components/ui/Reveal";
+import { cardHoverClass } from "@/components/ui/Card";
 
 export default function ContactPage() {
   const { t } = useI18n();
@@ -26,36 +28,38 @@ export default function ContactPage() {
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-5">
-          <form onSubmit={handleSubmit} className="lg:col-span-3">
-            {submitted ? (
-              <div className="rounded-xl border border-lime-dark bg-surface-muted p-6 text-sm font-medium text-navy">
-                {t("contact.formSuccess")}
-              </div>
-            ) : (
-              <div className="flex flex-col gap-5">
-                <div>
-                  <Label htmlFor="name">{t("contact.formName")}</Label>
-                  <Input id="name" required placeholder={t("contact.formName")} />
+          <Reveal className="lg:col-span-3">
+            <form onSubmit={handleSubmit}>
+              {submitted ? (
+                <div className="rounded-xl border border-lime-dark bg-surface-muted p-6 text-sm font-medium text-navy">
+                  {t("contact.formSuccess")}
                 </div>
-                <div>
-                  <Label htmlFor="email">{t("contact.formEmail")}</Label>
-                  <Input id="email" type="email" required placeholder={t("contact.formEmail")} />
+              ) : (
+                <div className="flex flex-col gap-5">
+                  <div>
+                    <Label htmlFor="name">{t("contact.formName")}</Label>
+                    <Input id="name" required placeholder={t("contact.formName")} />
+                  </div>
+                  <div>
+                    <Label htmlFor="email">{t("contact.formEmail")}</Label>
+                    <Input id="email" type="email" required placeholder={t("contact.formEmail")} />
+                  </div>
+                  <div>
+                    <Label htmlFor="message">{t("contact.formMessage")}</Label>
+                    <Textarea id="message" required rows={5} placeholder={t("contact.formMessage")} />
+                  </div>
+                  <div>
+                    <Button type="submit" disabled={submitting} animated>
+                      {submitting ? t("common.loading") : t("contact.formSubmit")}
+                    </Button>
+                  </div>
                 </div>
-                <div>
-                  <Label htmlFor="message">{t("contact.formMessage")}</Label>
-                  <Textarea id="message" required rows={5} placeholder={t("contact.formMessage")} />
-                </div>
-                <div>
-                  <Button type="submit" disabled={submitting}>
-                    {submitting ? t("common.loading") : t("contact.formSubmit")}
-                  </Button>
-                </div>
-              </div>
-            )}
-          </form>
+              )}
+            </form>
+          </Reveal>
 
-          <div className="lg:col-span-2">
-            <div className="flex flex-col gap-5 rounded-xl border border-border p-6">
+          <Reveal delay={100} className="lg:col-span-2">
+            <div className={`flex flex-col gap-5 rounded-xl border border-border p-6 ${cardHoverClass}`}>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
                   {t("contact.supportEmail")}
@@ -75,7 +79,7 @@ export default function ContactPage() {
                 <p className="mt-1 text-sm font-medium text-navy">Kigali, Rwanda</p>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </Section>
     </>
