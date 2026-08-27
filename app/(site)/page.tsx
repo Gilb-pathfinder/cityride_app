@@ -118,10 +118,10 @@ export default function HomePage() {
       <Section>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <h2 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">
+            <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
               {t("home.sectionWhatTitle")}
             </h2>
-            <p className="mt-4 max-w-lg text-base leading-relaxed text-text-secondary">
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-text-secondary">
               {t("home.sectionWhatBody")}
             </p>
           </Reveal>
@@ -133,10 +133,10 @@ export default function HomePage() {
             ].map((stat, i) => (
               <Reveal key={stat.label} delay={i * 100}>
                 <div className={`rounded-xl border border-border p-5 text-center ${cardHoverClass}`}>
-                  <p className="text-2xl font-bold text-navy">
+                  <p className="text-3xl font-bold text-navy">
                     <CountUp end={stat.value} suffix={stat.suffix} />
                   </p>
-                  <p className="mt-1.5 text-xs text-text-secondary">{stat.label}</p>
+                  <p className="mt-1.5 text-sm text-text-secondary">{stat.label}</p>
                 </div>
               </Reveal>
             ))}
@@ -156,8 +156,8 @@ export default function HomePage() {
                 <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-navy text-lime">
                   {card.icon}
                 </span>
-                <h3 className="text-lg font-semibold text-navy">{card.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-secondary">{card.body}</p>
+                <h3 className="text-xl font-semibold text-navy">{card.title}</h3>
+                <p className="mt-2 text-base leading-relaxed text-text-secondary">{card.body}</p>
               </div>
             </Reveal>
           ))}
@@ -166,8 +166,8 @@ export default function HomePage() {
 
       <Section className="border-t border-border">
         <Reveal className="flex flex-col items-center gap-5 rounded-xl border border-border bg-navy px-6 py-14 text-center text-white">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{t("home.downloadTitle")}</h2>
-          <p className="max-w-lg text-sm text-white/70">{t("home.downloadBody")}</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{t("home.downloadTitle")}</h2>
+          <p className="max-w-lg text-base text-white/70">{t("home.downloadBody")}</p>
           <DownloadAppButton size="lg">{t("home.ctaDownload")}</DownloadAppButton>
         </Reveal>
       </Section>

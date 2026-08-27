@@ -31,7 +31,7 @@ export default function ContactPage() {
           <Reveal className="lg:col-span-3">
             <form onSubmit={handleSubmit}>
               {submitted ? (
-                <div className="rounded-xl border border-lime-dark bg-surface-muted p-6 text-sm font-medium text-navy">
+                <div className="rounded-xl border border-lime-dark bg-surface-muted p-6 text-base font-medium text-navy">
                   {t("contact.formSuccess")}
                 </div>
               ) : (
@@ -61,22 +61,22 @@ export default function ContactPage() {
           <Reveal delay={100} className="lg:col-span-2">
             <div className={`flex flex-col gap-5 rounded-xl border border-border p-6 ${cardHoverClass}`}>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                <p className="text-sm font-semibold uppercase tracking-wide text-text-secondary">
                   {t("contact.supportEmail")}
                 </p>
-                <p className="mt-1 text-sm font-medium text-navy">support@cityride.rw</p>
+                <p className="mt-1 text-base font-medium text-navy">support@cityride.rw</p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                <p className="text-sm font-semibold uppercase tracking-wide text-text-secondary">
                   {t("contact.supportPhone")}
                 </p>
-                <p className="mt-1 text-sm font-medium text-navy">+250 788 000 000</p>
+                <p className="mt-1 text-base font-medium text-navy">+250 788 000 000</p>
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+                <p className="text-sm font-semibold uppercase tracking-wide text-text-secondary">
                   {t("contact.office")}
                 </p>
-                <p className="mt-1 text-sm font-medium text-navy">Kigali, Rwanda</p>
+                <p className="mt-1 text-base font-medium text-navy">Kigali, Rwanda</p>
               </div>
             </div>
           </Reveal>

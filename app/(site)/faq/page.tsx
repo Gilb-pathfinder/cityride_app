@@ -15,11 +15,11 @@ export default function FaqPage() {
       <Section>
         <div className="grid gap-12 lg:grid-cols-2">
           <Reveal>
-            <h2 className="mb-5 text-lg font-bold text-navy">{t("faq.clientsTitle")}</h2>
+            <h2 className="mb-5 text-xl font-bold text-navy">{t("faq.clientsTitle")}</h2>
             <Accordion items={dict.faq.clientItems} />
           </Reveal>
           <Reveal delay={100}>
-            <h2 className="mb-5 text-lg font-bold text-navy">{t("faq.ridersTitle")}</h2>
+            <h2 className="mb-5 text-xl font-bold text-navy">{t("faq.ridersTitle")}</h2>
             <Accordion items={dict.faq.riderItems} />
           </Reveal>
         </div>

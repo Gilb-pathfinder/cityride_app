@@ -20,7 +20,7 @@ function StoreButton({ href, label, sub }: { href: string; label: string; sub: s
       </svg>
       <div className="text-left">
         <p className="text-[11px] uppercase tracking-wide text-text-secondary">{sub}</p>
-        <p className="text-sm font-bold text-navy">{label}</p>
+        <p className="text-base font-bold text-navy">{label}</p>
       </div>
     </a>
   );
@@ -52,7 +52,7 @@ export default function DownloadPage() {
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <p className="max-w-md text-sm leading-relaxed text-text-secondary">{t("download.body")}</p>
+            <p className="max-w-md text-base leading-relaxed text-text-secondary">{t("download.body")}</p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <StoreButton href={APP_STORE_LINKS.playStore} label={t("download.googlePlay")} sub="Get it on" />
@@ -61,9 +61,9 @@ export default function DownloadPage() {
           </Reveal>
 
           <Reveal delay={100} className="flex flex-col items-center gap-4 rounded-xl border border-border p-8 text-center">
-            <h3 className="text-sm font-bold text-navy">{t("download.qrTitle")}</h3>
+            <h3 className="text-base font-bold text-navy">{t("download.qrTitle")}</h3>
             <QrPlaceholder />
-            <p className="max-w-xs text-xs text-text-secondary">{t("download.qrBody")}</p>
+            <p className="max-w-xs text-sm text-text-secondary">{t("download.qrBody")}</p>
           </Reveal>
         </div>
       </Section>
@@ -71,7 +71,7 @@ export default function DownloadPage() {
       <Section bleed className="border-t border-border bg-surface-muted">
         <div>
           <Reveal className="text-center">
-            <h2 className="text-xl font-bold text-navy">{t("download.screensTitle")}</h2>
+            <h2 className="text-2xl font-bold text-navy">{t("download.screensTitle")}</h2>
           </Reveal>
           <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-4">
             {[0, 1, 2, 3].map((i) => (
