@@ -223,3 +223,12 @@ export const mockDashboardMetrics: DashboardMetrics = {
   completedTripsToday: mockTripRequests.filter((t) => t.status === "completed").length,
   paymentsTotalToday: mockPayments.reduce((sum, p) => sum + p.amount, 0),
 };
+
+// Illustrative weekly series for the dashboard charts (mock data, no historical
+// time-series exists yet). Today's real trip count anchors the last point.
+export const mockWeeklyTripVolume = {
+  labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  values: [9, 14, 11, 17, 22, 26, mockDashboardMetrics.tripRequestsToday + 12],
+};
+
+export const mockRidersOnlineTrend = [3, 5, 4, 6, 5, 7, mockDashboardMetrics.activeRidersOnline];

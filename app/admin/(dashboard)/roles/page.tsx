@@ -67,7 +67,7 @@ export default function RolesPage() {
       />
 
       {showForm && (
-        <form onSubmit={handleCreate} className="mb-6 grid gap-4 rounded-xl border border-border bg-surface p-5 sm:grid-cols-2">
+        <form onSubmit={handleCreate} className="mb-6 grid gap-4 rounded-2xl border border-border bg-surface shadow-sm p-5 sm:grid-cols-2">
           <div>
             <Label htmlFor="roleName">{t("admin.roles.roleName")}</Label>
             <Input id="roleName" required value={name} onChange={(e) => setName(e.target.value)} />

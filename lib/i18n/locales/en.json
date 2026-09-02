@@ -227,7 +227,13 @@
       "tripRequestsToday": "Trip Requests today",
       "tripsInProgress": "Trips in progress",
       "completedToday": "Completed today",
-      "paymentsToday": "Payments today"
+      "paymentsToday": "Payments today",
+      "welcomeBack": "Welcome back",
+      "refresh": "Refresh",
+      "paymentsCardNote": "Collected across all trips",
+      "recentTrips": "Recent Trip Requests",
+      "volumeTitle": "Weekly Trip Volume",
+      "reviewNow": "Review now"
     },
     "users": {
       "title": "Users",

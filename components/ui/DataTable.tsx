@@ -29,7 +29,7 @@ export function DataTable<T>({
 }: DataTableProps<T>) {
   if (status === "loading") {
     return (
-      <div className="rounded-xl border border-border bg-surface">
+      <div className="rounded-2xl border border-border bg-surface shadow-sm">
         <LoadingState />
       </div>
     );
@@ -37,7 +37,7 @@ export function DataTable<T>({
 
   if (status === "error") {
     return (
-      <div className="rounded-xl border border-border bg-surface">
+      <div className="rounded-2xl border border-border bg-surface shadow-sm">
         <ErrorState onRetry={onRetry} />
       </div>
     );
@@ -45,14 +45,14 @@ export function DataTable<T>({
 
   if (rows.length === 0) {
     return (
-      <div className="rounded-xl border border-border bg-surface">
+      <div className="rounded-2xl border border-border bg-surface shadow-sm">
         <EmptyState />
       </div>
     );
   }
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-border bg-surface">
+    <div className="overflow-x-auto rounded-2xl border border-border bg-surface shadow-sm">
       <table className="w-full min-w-[720px] border-collapse text-left text-sm">
         <thead>
           <tr className="border-b border-border bg-surface-muted">

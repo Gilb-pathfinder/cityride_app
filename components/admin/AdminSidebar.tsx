@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useI18n } from "@/lib/i18n/context";
 import { useAdminAuth } from "@/lib/auth/admin-auth-context";
-import { Logo } from "@/components/site/Logo";
 import {
   IconBell,
   IconBike,
@@ -32,6 +31,35 @@ const NAV_ITEMS = [
   { href: "/admin/config", key: "appConfig", icon: IconSettings },
 ];
 
+function NavIcon({
+  href,
+  active,
+  label,
+  onClick,
+  children,
+}: {
+  href: string;
+  active: boolean;
+  label: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link href={href} onClick={onClick} className="group relative flex justify-center">
+      <span
+        className={`flex h-11 w-11 items-center justify-center rounded-2xl transition-colors ${
+          active ? "bg-lime text-navy" : "text-text-secondary hover:bg-surface-muted hover:text-navy"
+        }`}
+      >
+        {children}
+      </span>
+      <span className="pointer-events-none absolute left-full top-1/2 z-40 ml-3 -translate-y-1/2 whitespace-nowrap rounded-md bg-navy px-2.5 py-1.5 text-xs font-medium text-white opacity-0 shadow-lg transition-opacity duration-150 group-hover:opacity-100">
+        {label}
+      </span>
+    </Link>
+  );
+}
+
 export function AdminSidebar({
   mobileOpen = false,
   onClose,
@@ -41,7 +69,7 @@ export function AdminSidebar({
 }) {
   const { t } = useI18n();
   const pathname = usePathname();
-  const { admin, logout } = useAdminAuth();
+  const { logout } = useAdminAuth();
   const router = useRouter();
 
   function handleLogout() {
@@ -51,56 +79,49 @@ export function AdminSidebar({
 
   const content = (
     <>
-      <div className="flex h-16 items-center border-b border-border px-5">
-        <Logo />
+      <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-navy">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8Z" fill="#C6FF00" />
+          <circle cx="12" cy="10" r="3" fill="#101828" />
+        </svg>
       </div>
 
-      <nav className="flex flex-1 flex-col gap-0.5 overflow-y-auto p-3">
+      <nav className="flex flex-1 flex-col items-center gap-2 py-6">
         {NAV_ITEMS.map(({ href, key, icon: Icon, exact }) => {
           const active = exact ? pathname === href : pathname.startsWith(href);
           return (
-            <Link
-              key={href}
-              href={href}
-              onClick={onClose}
-              className={`flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition-colors ${
-                active ? "bg-navy text-lime" : "text-text-secondary hover:bg-surface-muted hover:text-navy"
-              }`}
-            >
+            <NavIcon key={href} href={href} active={active} label={t(`admin.sidebar.${key}`)} onClick={onClose}>
               <Icon />
-              {t(`admin.sidebar.${key}`)}
-            </Link>
+            </NavIcon>
           );
         })}
       </nav>
 
-      <div className="border-t border-border p-3">
-        <div className="mb-2 px-3 py-2">
-          <p className="truncate text-sm font-semibold text-navy">{admin?.fullName}</p>
-          <p className="truncate text-xs text-text-secondary">{admin?.roleName}</p>
-        </div>
-        <button
-          type="button"
-          onClick={handleLogout}
-          className="flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-surface-muted hover:text-error"
-        >
-          <IconLogout />
+      <button
+        type="button"
+        onClick={handleLogout}
+        className="group relative flex h-11 w-11 items-center justify-center rounded-2xl text-text-secondary transition-colors hover:bg-error/10 hover:text-error"
+      >
+        <IconLogout />
+        <span className="pointer-events-none absolute left-full top-1/2 z-40 ml-3 -translate-y-1/2 whitespace-nowrap rounded-md bg-navy px-2.5 py-1.5 text-xs font-medium text-white opacity-0 shadow-lg transition-opacity duration-150 group-hover:opacity-100">
           {t("auth.logout")}
-        </button>
-      </div>
+        </span>
+      </button>
     </>
   );
 
   return (
     <>
-      <aside className="hidden w-64 flex-none flex-col border-r border-border bg-surface lg:flex">
+      <aside className="hidden w-20 flex-none flex-col items-center gap-2 rounded-3xl bg-surface p-3 shadow-sm lg:flex">
         {content}
       </aside>
 
       {mobileOpen && (
         <div className="fixed inset-0 z-50 lg:hidden">
           <div className="absolute inset-0 bg-navy/40" onClick={onClose} />
-          <aside className="absolute inset-y-0 left-0 flex w-72 flex-col bg-surface">{content}</aside>
+          <aside className="absolute inset-y-3 left-3 flex w-20 flex-col items-center gap-2 rounded-3xl bg-surface p-3 shadow-xl">
+            {content}
+          </aside>
         </div>
       )}
     </>

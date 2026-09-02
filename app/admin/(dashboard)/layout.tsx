@@ -27,11 +27,11 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
   }
 
   return (
-    <div className="flex min-h-screen bg-surface-muted">
+    <div className="flex min-h-screen gap-4 bg-surface-muted p-3 sm:p-4">
       <AdminSidebar mobileOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div className="flex min-w-0 flex-1 flex-col gap-4">
         <AdminTopbar onMenuClick={() => setMobileOpen(true)} />
-        <main className="flex-1 overflow-x-hidden p-5 sm:p-8">{children}</main>
+        <main className="flex-1 overflow-x-hidden p-1 sm:p-2">{children}</main>
       </div>
     </div>
   );

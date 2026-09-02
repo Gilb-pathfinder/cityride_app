@@ -37,7 +37,7 @@ export default function RiderVerificationPage() {
       {status === "success" && data && data.length > 0 && (
         <div className="grid gap-5 lg:grid-cols-2">
           {data.map((rider) => (
-            <div key={rider.id} className="rounded-xl border border-border bg-surface p-6">
+            <div key={rider.id} className="rounded-2xl border border-border bg-surface shadow-sm p-6">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h3 className="text-base font-bold text-navy">{rider.fullName}</h3>

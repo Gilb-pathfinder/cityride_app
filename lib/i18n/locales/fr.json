@@ -227,7 +227,13 @@
       "tripRequestsToday": "Trip Requests aujourd'hui",
       "tripsInProgress": "Trajets en cours",
       "completedToday": "Terminés aujourd'hui",
-      "paymentsToday": "Paiements aujourd'hui"
+      "paymentsToday": "Paiements aujourd'hui",
+      "welcomeBack": "Bon retour",
+      "refresh": "Actualiser",
+      "paymentsCardNote": "Collectés sur tous les trajets",
+      "recentTrips": "Trip Requests récents",
+      "volumeTitle": "Volume hebdomadaire de trajets",
+      "reviewNow": "Examiner maintenant"
     },
     "users": {
       "title": "Utilisateurs",

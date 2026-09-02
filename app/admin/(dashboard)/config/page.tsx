@@ -45,7 +45,7 @@ export default function AppConfigPage() {
       {status === "error" && <ErrorState onRetry={refetch} />}
 
       {status === "success" && form && (
-        <form onSubmit={handleSubmit} className="max-w-2xl rounded-xl border border-border bg-surface p-6">
+        <form onSubmit={handleSubmit} className="max-w-2xl rounded-2xl border border-border bg-surface shadow-sm p-6">
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
               <Label>{t("admin.config.launchAreaCenter")}</Label>

@@ -227,7 +227,13 @@
       "tripRequestsToday": "Gusaba urugendo kwa none",
       "tripsInProgress": "Ingendo zirimo gukorwa",
       "completedToday": "Byarangiye none",
-      "paymentsToday": "Ubwishyu bwa none"
+      "paymentsToday": "Ubwishyu bwa none",
+      "welcomeBack": "Murakaza neza",
+      "refresh": "Vugurura",
+      "paymentsCardNote": "Byakusanyijwe ku ngendo zose",
+      "recentTrips": "Gusaba Urugendo kwa Vuba",
+      "volumeTitle": "Umubare w'Ingendo mu Cyumweru",
+      "reviewNow": "Suzuma nonaha"
     },
     "users": {
       "title": "Abakoresha",
