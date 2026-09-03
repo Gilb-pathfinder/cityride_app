@@ -232,8 +232,33 @@
       "refresh": "Actualiser",
       "paymentsCardNote": "Collectés sur tous les trajets",
       "recentTrips": "Trip Requests récents",
-      "volumeTitle": "Volume hebdomadaire de trajets",
-      "reviewNow": "Examiner maintenant"
+      "volumeTitle": "Volume hebdomadaire",
+      "reviewNow": "Examiner maintenant",
+      "recentContactEvents": "Contact Events récents",
+      "recentPayments": "Paiements récents",
+      "paymentBreakdown": "Méthodes de paiement",
+      "notificationDelivery": "Livraison des notifications",
+      "systemStatus": "État du système",
+      "operational": "Opérationnel",
+      "underMaintenance": "En maintenance",
+      "searchPlaceholder": "Rechercher utilisateurs, conducteurs...",
+      "noResults": "Aucun résultat trouvé",
+      "notifications": "Notifications",
+      "noNotifications": "Aucune notification récente"
+    },
+    "profile": {
+      "title": "Mon profil",
+      "subtitle": "Gérez les informations de votre compte administrateur.",
+      "accountSection": "Informations du compte",
+      "securitySection": "Changer le mot de passe",
+      "currentPassword": "Mot de passe actuel",
+      "newPassword": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe",
+      "passwordMismatch": "Les nouveaux mots de passe ne correspondent pas.",
+      "passwordUpdated": "Mot de passe mis à jour avec succès."
+    },
+    "footer": {
+      "tagline": "Panneau d'administration CityRide"
     },
     "users": {
       "title": "Utilisateurs",

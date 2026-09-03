@@ -23,6 +23,7 @@ interface AdminAuthContextValue {
   status: "checking" | "authenticated" | "unauthenticated";
   login: (email: string, password: string) => Promise<void>;
   logout: () => void;
+  updateAdmin: (admin: AdminUser) => void;
 }
 
 const AdminAuthContext = createContext<AdminAuthContextValue | null>(null);
@@ -60,9 +61,18 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
     setStatus("unauthenticated");
   }, []);
 
+  const updateAdmin = useCallback((admin: AdminUser) => {
+    setSession((prev) => {
+      if (!prev) return prev;
+      const next: Session = { ...prev, admin };
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      return next;
+    });
+  }, []);
+
   const value = useMemo(
-    () => ({ admin: session?.admin ?? null, status, login, logout }),
-    [session, status, login, logout]
+    () => ({ admin: session?.admin ?? null, status, login, logout, updateAdmin }),
+    [session, status, login, logout, updateAdmin]
   );
 
   return <AdminAuthContext.Provider value={value}>{children}</AdminAuthContext.Provider>;

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAdminAuth } from "@/lib/auth/admin-auth-context";
 import { AdminSidebar } from "@/components/admin/AdminSidebar";
 import { AdminTopbar } from "@/components/admin/AdminTopbar";
+import { AdminFooter } from "@/components/admin/AdminFooter";
 import { LoadingState } from "@/components/ui/States";
 
 export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
@@ -32,6 +33,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
       <div className="flex min-w-0 flex-1 flex-col gap-4">
         <AdminTopbar onMenuClick={() => setMobileOpen(true)} />
         <main className="flex-1 overflow-x-hidden p-1 sm:p-2">{children}</main>
+        <AdminFooter />
       </div>
     </div>
   );

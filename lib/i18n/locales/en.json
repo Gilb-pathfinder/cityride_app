@@ -232,8 +232,33 @@
       "refresh": "Refresh",
       "paymentsCardNote": "Collected across all trips",
       "recentTrips": "Recent Trip Requests",
-      "volumeTitle": "Weekly Trip Volume",
-      "reviewNow": "Review now"
+      "volumeTitle": "Weekly Volume",
+      "reviewNow": "Review now",
+      "recentContactEvents": "Recent Contact Events",
+      "recentPayments": "Recent Payments",
+      "paymentBreakdown": "Payment Methods",
+      "notificationDelivery": "Notification Delivery",
+      "systemStatus": "System Status",
+      "operational": "Operational",
+      "underMaintenance": "Under maintenance",
+      "searchPlaceholder": "Search users, riders...",
+      "noResults": "No matches found",
+      "notifications": "Notifications",
+      "noNotifications": "No recent notifications"
+    },
+    "profile": {
+      "title": "My Profile",
+      "subtitle": "Manage your admin account details.",
+      "accountSection": "Account Information",
+      "securitySection": "Change Password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "passwordMismatch": "New passwords do not match.",
+      "passwordUpdated": "Password updated successfully."
+    },
+    "footer": {
+      "tagline": "CityRide Admin Panel"
     },
     "users": {
       "title": "Users",

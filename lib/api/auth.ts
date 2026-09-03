@@ -17,3 +17,14 @@ export function loginAdmin(email: string, password: string): Promise<LoginResult
   }
   return simulate({ admin, token: `mock-token-${admin.id}` }, 700);
 }
+
+// Maps to PATCH /admin/profile (the authenticated admin updating their own profile)
+export function updateAdminProfile(
+  adminId: string,
+  changes: Partial<Pick<AdminUser, "fullName" | "email">>
+): Promise<AdminUser> {
+  const admin = mockAdminUsers.find((a) => a.id === adminId);
+  if (!admin) return Promise.reject(new Error("admin_not_found"));
+  Object.assign(admin, changes);
+  return simulate({ ...admin }, 600);
+}

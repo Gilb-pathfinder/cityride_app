@@ -232,8 +232,33 @@
       "refresh": "Vugurura",
       "paymentsCardNote": "Byakusanyijwe ku ngendo zose",
       "recentTrips": "Gusaba Urugendo kwa Vuba",
-      "volumeTitle": "Umubare w'Ingendo mu Cyumweru",
-      "reviewNow": "Suzuma nonaha"
+      "volumeTitle": "Umubare mu Cyumweru",
+      "reviewNow": "Suzuma nonaha",
+      "recentContactEvents": "Guhamagara kwa Vuba",
+      "recentPayments": "Ubwishyu bwa Vuba",
+      "paymentBreakdown": "Uburyo bwo Kwishyura",
+      "notificationDelivery": "Kugera kw'Ubutumwa",
+      "systemStatus": "Uko Sisitemu Imeze",
+      "operational": "Irakora",
+      "underMaintenance": "Irimo gusanwa",
+      "searchPlaceholder": "Shakisha abakoresha, abatwara moto...",
+      "noResults": "Nta bisubizo bibonetse",
+      "notifications": "Ubutumwa",
+      "noNotifications": "Nta butumwa bwa vuba"
+    },
+    "profile": {
+      "title": "Umwirondoro Wanjye",
+      "subtitle": "Genzura amakuru ya konti yawe y'ubuyobozi.",
+      "accountSection": "Amakuru ya Konti",
+      "securitySection": "Hindura Ijambo ry'Ibanga",
+      "currentPassword": "Ijambo ry'ibanga rikoreshwa",
+      "newPassword": "Ijambo ry'ibanga rishya",
+      "confirmPassword": "Emeza ijambo ry'ibanga rishya",
+      "passwordMismatch": "Amagambo y'ibanga mashya ntabwo ahura.",
+      "passwordUpdated": "Ijambo ry'ibanga ryavuguruwe neza."
+    },
+    "footer": {
+      "tagline": "Ikibaho cy'Ubuyobozi bwa CityRide"
     },
     "users": {
       "title": "Abakoresha",
